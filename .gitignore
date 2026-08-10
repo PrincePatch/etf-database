@@ -1,0 +1,21 @@
+# Raw scraped/downloaded source files. Reproducible from the pipeline, often
+# large, and sometimes redistribution-restricted -- so they stay local.
+data/raw/
+
+# Processed tables are committed (they are the database), except the price
+# history, which is regenerated and published as a release asset instead of
+# being versioned bar by bar.
+data/processed/prices/
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+node_modules/
+.DS_Store
+Thumbs.db

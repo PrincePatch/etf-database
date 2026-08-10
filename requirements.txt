@@ -1,0 +1,12 @@
+pandas>=2.2
+pyarrow>=16.0
+numpy>=1.26
+requests>=2.32
+yfinance>=0.2.55
+curl_cffi>=0.7
+duckdb>=1.1
+lxml>=5.2
+beautifulsoup4>=4.12
+tenacity>=8.5
+tqdm>=4.66
+pytest>=8.0
