@@ -253,7 +253,7 @@ function render() {
       const field = FIELDS[key];
       const sorted = state.sort === key;
       const ariaSort = sorted ? ` aria-sort="${state.dir === 'asc' ? 'ascending' : 'descending'}"` : '';
-      return `<th scope="col" class="${field.align === 'left' ? 'left' : ''}"${ariaSort}>
+      return `<th scope="col" class="col-${key}${field.align === 'left' ? ' left' : ''}"${ariaSort}>
         <button type="button" class="sortbtn" data-sort="${key}">
           <span>${A.esc(field.label)}</span>
           <span class="arrow" aria-hidden="true">${state.dir === 'asc' ? '↑' : '↓'}</span>

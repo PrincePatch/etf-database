@@ -1,5 +1,11 @@
 """Build the published dataset the static site reads, from the processed tables.
 
+Until the pipeline produces real tables, `tools/gen_synthetic.py` writes
+schema-conformant fixtures at full scale so the site can be built and measured;
+it stamps `data/processed/_SYNTHETIC`, which propagates into the manifest and
+raises a demo banner on every page, so demonstration figures can never be
+mistaken for real ones.
+
 `docs/` is a plain directory on GitHub Pages: no server, no API, no database
 process. The browser runs DuckDB-WASM and range-reads these Parquet files
 directly over HTTP, pulling only the byte ranges a query touches -- GitHub Pages

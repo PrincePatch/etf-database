@@ -441,6 +441,30 @@ thead th[aria-sort] .arrow { opacity: 1; }
 th.left, td.left { text-align: left; }
 th.plain { padding: 0.5rem 0.55rem; }
 
+/* The identity columns stay put while the statistics scroll under them.
+   There are a dozen numeric columns, so reading a fund's Sharpe ratio means
+   scrolling right -- and without pinning, the name it belongs to has already
+   left the viewport, which is precisely the comparison the table exists to make.
+
+   Backgrounds here are opaque rather than inherited: a sticky cell paints over
+   the cells passing beneath it, and a transparent one shows both at once. The
+   hover and selection rules above still win on specificity, so a pinned cell
+   keeps highlighting with the rest of its row. */
+.cellcheck { width: 2.4rem; min-width: 2.4rem; }
+thead th.cellcheck,
+thead th.col-name { position: sticky; z-index: 4; background: var(--surface-2); }
+tbody td.cellcheck,
+tbody td.name { position: sticky; z-index: 1; background: var(--surface); }
+thead th.cellcheck, tbody td.cellcheck { left: 0; }
+thead th.col-name, tbody td.name { left: 2.4rem; }
+/* Marks where the frozen pane ends, so the seam reads as deliberate rather
+   than as a rendering artefact. */
+thead th.col-name::after,
+tbody td.name::after {
+  content: ''; position: absolute; top: 0; right: 0; bottom: 0; width: 1px;
+  background: var(--rule-strong);
+}
+
 tbody tr:hover td { background: var(--accent-wash); }
 tbody tr.is-selected td { background: var(--pos-wash); }
 tbody td.name { max-width: 30ch; overflow: hidden; text-overflow: ellipsis; }
@@ -573,6 +597,9 @@ details.method div { padding-top: 0.5rem; }
 
 @media (max-width: 620px) {
   body { font-size: 14px; }
+  /* A 30ch frozen pane would leave almost nothing to scroll on a phone, so the
+     name truncates harder here and the ticker underneath carries the identity. */
+  tbody td.name { max-width: 12ch; }
   .field-row { grid-template-columns: 1fr; }
   .stats { grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)); }
   .kv { grid-template-columns: 1fr; gap: 0 0; }
@@ -586,4 +613,8 @@ details.method div { padding-top: 0.5rem; }
 @media print {
   .masthead, .filters, .site-footer, .actions { display: none; }
   .table-wrap { max-height: none; overflow: visible; }
+  /* Nothing scrolls on paper, and a sticky cell in a visible-overflow container
+     anchors to the viewport rather than the table. */
+  thead th, tbody td { position: static; }
+  thead th.col-name::after, tbody td.name::after { display: none; }
 }
