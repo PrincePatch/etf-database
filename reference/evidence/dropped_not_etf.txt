@@ -1,0 +1,81 @@
+Dropped: PEA-eligible but NOT an ETF (actively managed SICAV/FCP leaking out of broker 'tracker' screens).
+
+AT0000662275  3 BANKEN OESTERREICH-FDS                             boursedirect
+BE0003698124  DIEGEM KENNEDYCERT (DIEG)                            fortuneo
+DE0008478058  FT FRANKFURT-EFF.-FDS                                boursedirect
+DE0008488206  UBS(D)AKT.FDS-SPEC. I DTL                            boursedirect
+DE0008491002  UNIFONDS                                             boursedirect
+DE000A0D8Q15  iShares STOXX EU Enlarged 15 (DE) (GXW)              fortuneo
+FR0000447039  €STR capitalisé + 8,5 points de base ✓ éligible PEA  web_investissements-faciles.com
+FR0000990095  ODDO AVENIR EURO CR-EUR                              boursedirect
+FR0007035159  PREVOIR GESTION ACTIONS                              boursedirect
+FR0010149179  CARMIG.EO-PATRIMO.AEO ACC                            boursedirect
+FR0010187898  R CONVICT.EURO C EUR                                 boursedirect
+IE0002921975  METZLER-METZ.EUR.SM.COS.A                            boursedirect
+IE0033009238  J O H.C.M.U.FD-CO.EU.A EO                            boursedirect
+LU0011889846  HEND.HORIZ.EUROLAN.A2 ACC                            boursedirect
+LU0030165871  SEB FUND 1-NORDIC C                                  boursedirect
+LU0048580004  FID.FDS-GERMANY A GL.                                boursedirect
+LU0048581077  FID.FDS-IBERIA FD  A GL.                             boursedirect
+LU0048584766  FID.FDS-ITALY A GL.                                  boursedirect
+LU0048588080  FID.FDS-NORDIC FD  A GL.                             boursedirect
+LU0087656699  AXA WLD-FRAM.ITALY A T                               boursedirect
+LU0089640097  JPM-EOLND.EQ.JPMEE ADEO                              boursedirect
+LU0091115906  SISF EURO EQUITY A DIS                               boursedirect
+LU0091116110  SISF EURO EQUITY B DIS                               boursedirect
+LU0091116201  SISF EURO EQUITY C DIS                               boursedirect
+LU0093502762  BGF-EO-MARKETS NAM.A2                                boursedirect
+LU0093666013  F.TEM.INV-T.EUROLND A ACC                            boursedirect
+LU0095325956  AB FCPI-EUROZ.EQ.PTF AXEO                            boursedirect
+LU0099161993  CARMIGNAC PO.-GR.EUR.AEOA                            boursedirect
+LU0106235293  SISF EURO EQUITY A ACC                               boursedirect
+LU0106235459  SISF EURO EQUITY C ACC                               boursedirect
+LU0117858166  JPM-EOLND.EQ.JPMEE DAEO                              boursedirect
+LU0124167924  FPM-STOCKP.GERM.ALL CAP C                            boursedirect
+LU0125946151  MFS M.-EURO.CORE EQ.A1 EO                            boursedirect
+LU0128521001  F.TEM.INV-EUROLND N ACC.                             boursedirect
+LU0129233093  LUPUS ALP.-SM.GER.CHAMP.A                            boursedirect
+LU0133706308  SISF EURO EQUITY A1 ACC                              boursedirect
+LU0145634076  DE.INV.I-TOP EUROPE LC                               boursedirect
+LU0145634662  DE.INV.I-TOP EUROPE LD                               boursedirect
+LU0145635123  DE.INV.I-TOP EUROPE NC                               boursedirect
+LU0145644893  DE.INV.I-TOP EUROL.LC                                boursedirect
+LU0145647052  DE.INV.I-TOP EUROL.LD                                boursedirect
+LU0145647300  DE.INV.I-TOP EUROL.NC                                boursedirect
+LU0145647722  DE.INV.I-TOP EUROL.FC                                boursedirect
+LU0162689763  BGF-EO-MARKETS NAM.A4EO                              boursedirect
+LU0165073775  HSBC GIF-EOL.EQ.S.E.E.A C                            boursedirect
+LU0165073858  HSBC GIF-EOL.EQ.S.E.E.A.D                            boursedirect
+LU0165074666  HSBC GIF-EUROLAND EQ.A C                             boursedirect
+LU0165074740  HSBC GIF-EUROLAND EQ.A D                             boursedirect
+LU0187937411  FIDECUM-AVANT-GARDE S.A                              boursedirect
+LU0187937684  FIDECUM-AVANT-GARDE S.C                              boursedirect
+LU0210529490  JPM-EOLND.EQ.JPMEE AA                                boursedirect
+LU0235308482  ALKEN FD-EUROP.OPPORT.R                              boursedirect
+LU0238202427  FID.FDS-EUROP FD A ACC.EO                            boursedirect
+LU0247695934  HEND.HORIZ.EUROLAN.X ACC                             boursedirect
+LU0255980913  PICTET-EUROL.IND.NA.PEO                              boursedirect
+LU0256839944  AGIF-EOLAND EQU.GRTH A EO                            boursedirect
+LU0256840447  AGIF-EOLAND EQU.GRTH ATEO                            boursedirect
+LU0261948227  FID.FDS-GERMANY A ACC.EUR                            boursedirect
+LU0294249692  CARMIGNAC PO.-GR.EUR.EEOA                            boursedirect
+LU0300507034  GEN.IN.-EO EQU.M.CAP DXEO                            boursedirect
+LU0308864023  MAINFIRST-TOP EUR.ID.FD A                            boursedirect
+LU0347565383  ALKEN FD-EUROP.OPPORT.U                              boursedirect
+LU0370217092  FIDECUM-CONTR.VAL.EUROL.A                            boursedirect
+LU0379090680  SSGA LUX.-EMU EQU.FD P                               boursedirect
+LU0389656892  AXA WLD-FRAML.EUROZ.AC EO                            boursedirect
+LU0390221256  MAINFIRST-GERMANY FUND A                             boursedirect
+LU0390221686  MAINFIRST-GERMANY FUND B                             boursedirect
+LU0390221926  MAINFIRST-GERMANY FUND C                             boursedirect
+LU0417818076  NORD.1-EUR.SM.+M.C.E.APEO                            boursedirect
+LU0568607203  AMUNDI-EQ.EURO.S.C.AE CAP                            boursedirect
+LU0740822977  DE.INV.I-GERMAN EQTS. LD                             boursedirect
+LU0823401731  PAR.-EQ.B.SEL.EO CL.DIS                              boursedirect
+LU0840617350  AGIF-GERMAN EQUITY AT EO                             boursedirect
+LU1603797074  IQ EMU SRI                                           github
+LU1792117340  Lyxor Msci Emu Esg Trend Ldrs(dr)etfacc              fortuneo
+LU1834983394  LYXOR STX 600 AUTO                                   github
+LU1834983808  LYXOR STX600 CONMA                                   github
+LU1834988351  LYXOR STX600 GOODS                                   github
+LU2182388400  Amundi EURO ISTOXX Climate Paris Aligned             web_finref.fr

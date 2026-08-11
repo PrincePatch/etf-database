@@ -1,0 +1,676 @@
+isin,ticker,name,issuer,source_url
+AT0000662275,FFH6C,3 BANKEN OESTERREICH-FDS,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+BE0003698124,DIEG,DIEGEM KENNEDYCERT (DIEG),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+DE0002635273,EXSB,ISHARES DIVDAX UCITS ETF,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+DE0005933923,EXS3,ISHARES MDAX UC.ETF EOA,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+DE0005933931,EXS1,iShares Core DAX® UCITS ETF (DE) - EUR ACC (EXS1),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+DE0005933931,EXS1,iShares Core DAX UCITS ETF EUR,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+DE0005933931,1rAEXS1,iShares Core DAX(r) ETF (DE) Acc,BlackRock Asset Management Deutschland AG,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+DE0005933956,EXW1,ISH.CORE EO STOX.50 U.ETF,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+DE0005933972,EXS2,ISHARES TECDAX UC.E.ACC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+DE0008478058,FEZTC,FT FRANKFURT-EFF.-FDS,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+DE0008488206,FUIB5,UBS(D)AKT.FDS-SPEC. I DTL,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+DE0008491002,FU1ID,UNIFONDS,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+DE000A0D8Q07,EXSI,ISHARES EURO STOXX U.ETF,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+DE000A0D8Q15,GXW,iShares STOXX EU Enlarged 15 (DE) (GXW),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+DE000A0D8Q23,EXXX,ISHARES ATX UCITS ETF,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+DE000A0F5UG3,EXXV,IS.DJ EUROZ.SUST.SC.U.ETF,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+DE000A0H0728,CMSE,ISHARES DIVERS COMMODITY SWAP UCITS ETF (CMSE),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+DE000A0H0728,CMSE,iShares Diversified Commodity,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+DE000A0H0728,1rTCMSE,iShares Diversified Commodity Swap (DE),BlackRock Asset Management Deutschland AG,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+DE000A0H08Q4,EXV3,ISHS STEU600 TEC.ETF EOD,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+DE000A0Q4R28,EXV5,ISHS SE.600 A+P U.ETF EOD,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+DE000A2QP323,EXIB,ISHS TECDAX UCITS ETF EOD,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+DE000A2QP372,EXA1,iShares EURO STOXX Banks 30-15 UCITS ETF (DE) - ACC (EXA1),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+DE000A2QP372,EXA1,iShares EURO STOXX Banks 30-15,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+DE000A2QP372,1rAEXA1,iShares EURO STOXX Banks 30-15ETF DE acc,BlackRock Asset Management Deutschland AG,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+DE000A2QP380,IDVA,iShares EURO STOXX Select Dividend 30 UCITS ETF (DE) - ACC (IDVA),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+DE000A2QP380,IDVA,iShares EURO STOXX Select Divi,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+DE000A2QP380,1rAIDVA,iShares EURO STOXX Select Div 30 DE acc,BlackRock Asset Management Deutschland AG,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+DE000A2QP398,STEC,iShares STOXX Europe 600 Technology UCITS ETF (DE) - EUR ACC (STEC),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+DE000A2QP398,STEC,iShares STOXX Europe 600 Techn,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+DE000A2QP398,1rASTEC,iShares STOXX Europe 600 Tech (DE) acc,BlackRock Asset Management Deutschland AG,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+DE000A2QP4A8,SAOT,iShares STOXX Europe 600 Automobiles & Parts UCITS ETF (DE) - EUR ACC (SAOT),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+DE000A2QP4A8,SAOT,iShares STOXX Europe 600 Autom,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+DE000A2QP4A8,1rASAOT,iShares STOXX Europe 600 Auto&amp;P (DE) acc,BlackRock Asset Management Deutschland AG,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0000990095,FODAA,ODDO AVENIR EURO CR-EUR,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0007035159,FPV4A,PREVOIR GESTION ACTIONS,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0007052782,CAC,Amundi CAC 40 UCITS ETF - EUR DIS (CAC),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0007052782,CAC,Amundi CAC 40 UCITS ETF Dist,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0007052782,1rTCAC,Amundi CAC 40 ETF Dist,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0007052782,CAC,Amundi CAC 40 UCITS ETF Dist,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR0007054358,MSE,Amundi EURO STOXX 50 II UCITS ETF - ACC (MSE),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0007054358,MSE,Amundi EURO STOXX 50 II UCITS,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0007054358,1rTMSE,Amundi Euro Stoxx 50 II UCITS ETF Acc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0007054358,MSE,Amundi EURO STOXX 50 II UCITS ETF Acc,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR0010010827,MIB,Amundi FTSE MIB UCITS ETF - EUR DIS (MIB),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0010010827,MIB,Amundi FTSE MIB UCITS ETF Dist,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0010010827,MIB,Amundi FTSE MIB UCITS ETF Dist,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0010010827,1rTMIB,Amundi FTSE MIB ETF Dist,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0010010827,MIB,Amundi FTSE MIB UCITS ETF Dist,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR0010149179,FY9U2,CARMIG.EO-PATRIMO.AEO ACC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0010150458,E40,BNP PARIBAS EASY CAC 40® ESG UCITS ETF - EUR DIS (E40),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0010150458,E40,BNP Paribas EASY CAC 40(R) ESG,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0010150458,1rTE40,BNP Paribas Easy CAC 40(r) ESG ETF,BNP PARIBAS ASSET MANAGEMENT Europe,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0010187898,FROY3,R CONVICT.EURO C EUR,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0010251744,LYXIB,AMUNDI IBEX 35  (DR) UCITS ETF,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0010342592,LQQ,Amundi Nasdaq-100 Daily (2x) Leveraged UCITS ETF - EUR ACC (LQQ),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0010342592,LQQ,Amundi Nasdaq-100 Daily (2x) L,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0010405431,GRE,Amundi MSCI Greece UCITS ETF - EUR DIS (GRE),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0010405431,GRE,Amundi MSCI Greece UCITS ETF D,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0010405431,GRE,Amundi MSCI Greece UCITS ETF Dist,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0010405431,1rTGRE,Amundi MSCI Greece ETF Dist,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0010411884,BX4,Amundi CAC 40 Daily (-2x) Inverse UCITS ETF - EUR ACC (BX4),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0010411884,BX4,Amundi CAC 40 Daily (-2x) Inve,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0010424135,BSX,Amundi EURO STOXX 50 Daily (-1x) Inverse UCITS ETF - ACC (BSX),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0010424135,BSX,Amundi EURO STOXX 50 Daily (-1,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0010468983,LVE,Amundi EURO STOXX 50 Daily (2x) Leveraged UCITS ETF - ACC (LVE),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0010468983,LVE,Amundi EURO STOXX 50 Daily (2x,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0010591362,SHC,Amundi CAC 40 Daily (-1x) Inverse UCITS ETF - EUR ACC (SHC),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0010591362,SHC,Amundi CAC 40 Daily (-1x) Inve,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0010592014,LVC,Amundi CAC 40 Daily (2x) Leveraged UCITS ETF - EUR ACC (LVC),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0010592014,LVC,Amundi CAC 40 Daily (2x) Lever,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0010655704,CF1,AMUNDI CAC TRANSITION CLIMAT UCITS ETF - EUR ACC (CF1),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0010655704,CF1,AMUNDI CAC TRANSITION CLIMAT U,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0010655704,1rTCF1,Amundi CAC Transition Climat UCITS ETF,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0010655712,CG1,AMUNDI ETF DAX UCITS ETF DR - EUR ACC (CG1),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0010655712,CG1,AMUNDI ETF DAX UCITS ETF DR,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0010655712,1rTCG1,Amundi ETF DAX DR,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0010655746,CS1,Amundi IBEX 35 UCITS ETF - EUR ACC (CS1),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0010655746,CS1,Amundi IBEX 35 UCITS ETF - Acc,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0010655746,CS1,Amundi IBEX 35 UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0010655746,1rTCS1,Amundi Ibex 35 ETF Acc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0010717090,CD8,Amundi MSCI EMU High Dividend UCITS ETF - EUR ACC (CD8),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0010717090,CD8,Amundi MSCI EMU High Dividend,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0010717090,CD8,Amundi MSCI EMU High Dividend UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0010717090,1rTCD8,Amundi MSCI EMU High Dividend ETF Acc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0010717124,C4S,Amundi ETF Short CAC 40 Daily UCITS ETF - EUR ACC (C4S),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0010755611,CL2,Amundi MSCI USA Daily (2x) Leveraged UCITS ETF - EUR ACC (CL2),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0010755611,CL2,Amundi MSCI USA Daily (2x) Lev,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0010757781,C5S,Amundi ETF Short Euro Stoxx 50 Daily UCITS ETF - EUR ACC (C5S),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0011440478,PLEM,Amundi PEA Emergent EMEA (MSCI Emerging EMEA) ESG Transition UCITS ETF - EUR ACC (PLEM),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0011440478,PLEM,Amundi PEA Emergent EMEA (MSCI,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0011440478,PLEM,Amundi PEA Emergent EMEA (MSCI Emerging EMEA) ESG Transition UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0011440478,1rTPLEM,Amundi PEA Emerg EMEA MSCI ESG Trans ETF,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0011440478,PLEM,AMUNDI PEA MSCI EMERGING EMEA ESG LEADERS UCITS ETF - ACC,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR0011550177,ESD,BNP PARIBAS EASY S&P 500 UCITS ETF - C USD ACC (ESD),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0011550177,ESAP,BNPPEFR-S+P 500 UETF DLC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0011550177,1rTESD,BNPP Easy S&amp;P 500 ETF USD C,BNP PARIBAS ASSET MANAGEMENT Europe,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0011550185,ESE,BNP PARIBAS EASY S&P 500 UCITS ETF - C EUR ACC (ESE),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0011550185,ESE,BNP Paribas Easy S&P 500 UCITS,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0011550185,1rTESE,BNPP Easy S&amp;P 500 ETF EUR C,BNP PARIBAS ASSET MANAGEMENT Europe,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0011550193,ETZ,BNP PARIBAS EASY STOXX EUROPE 600 UCITS ETF - C ACC (ETZ),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0011550193,ETZ,BNP Paribas Easy Stoxx Europe,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0011550193,1rTETZ,BNPP Easy Stoxx Europe 600 ETF EUR C,BNP PARIBAS ASSET MANAGEMENT Europe,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0011550672,ETZD,BNP PARIBAS EASY STOXX EUROPE 600 UCITS ETF - C DIS (ETZD),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0011550672,ETZD,BNP Paribas Easy Stoxx Europe,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0011550672,1rTETZD,BNPP Easy Stoxx Europe 600 ETF EUR C/D,BNP PARIBAS ASSET MANAGEMENT Europe,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0011550680,ESDD,BNP PARIBAS EASY S&P 500 UCITS ETF - USD DIS (ESDD),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0011550680,ESEA,BNPPEFR-S+P 500 UE DLCD,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0011550680,1rTESDD,BNPP Easy S&amp;P 500 ETF USD C/D,BNP PARIBAS ASSET MANAGEMENT Europe,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0011857234,MDX,Amundi MDAX UCITS ETF - EUR DIS (MDX),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0011857234,MDX,Amundi MDAX UCITS ETF Dist,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0011857234,1rTMDX,Amundi MDAX UCITS ETF Dist,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0011869270,PDJE,Amundi PEA S&P US Industrials Screened UCITS ETF - EUR ACC (PDJE),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0011869270,PDJE,Amundi PEA S&P US Industrials,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0011869270,PDJE,Amundi PEA S&P US Industrials Screened UCITS ETF - Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0011869270,1rTPDJE,Amundi PEA S&amp;P US IndustrialsScrndETFAcc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0011869270,PDJE,AMUNDI PEA S&P US INDUSTRIALS ESG UCITS ETF,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR0011869304,PMEH,Amundi PEA Immobilier Europe (FTSE EPRA/NAREIT) UCITS ETF - EUR ACC (PMEH),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0011869304,PMEH,Amundi PEA Immobilier Europe (,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0011869304,PMEH,Amundi PEA Immobilier Europe (FTSE EPRA/NAREIT) UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0011869304,1rTPMEH,Amundi PEA Im Eurp FTSE EPRA/NAREIT ETFA,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0011869304,PMEH,Amundi PEA Immobilier Europe (FTSE EPRA / NAREIT) UCITS ETF Acc,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR0011869312,PAEJ,Amundi PEA Asie Pacifique (MSCI AC Asia Pacific Ex Japan) UCITS ETF - EUR ACC (PAEJ),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0011869312,PAEJ,Amundi PEA Asie Pacifique (MSC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0011869312,PAEJ,Amundi PEA Asie Pacifique (MSCI AC Asia Pacific Ex Japan) UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0011869312,1rTPAEJ,Amundi PEA AsiePac MSCI ACAP ex Jpn ETFA,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0011869312,PAEJ,Amundi PEA Asie Pacifique (MSCI AC Asia Pacific Ex Japan) UCITS ETF Acc,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR0011869320,PINR,Amundi PEA Inde (MSCI India) UCITS ETF - EUR ACC (PINR),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0011869320,PINR,Amundi PEA Inde (MSCI India) U,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0011869320,PINR,Amundi PEA Inde (MSCI India) UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0011869320,1rTPINR,Amundi PEA Inde (MSCI India) ETFAcc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0011869320,PINR,Amundi PEA Inde (MSCI India) UCITS ETF Acc,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR0011871078,PASI,Amundi PEA Chine (MSCI China) Screened UCITS ETF - EUR ACC (PASI),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0011871078,PASI,Amundi PEA Chine (MSCI China),,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0011871078,PASI,Amundi PEA Chine (MSCI China) Screened UCITS ETF - Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0011871078,1rTPASI,Amundi PEA Chine MSCIChScrUCITS ETF-Acc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0011871078,PASI,AMUNDI PEA MSCI CHINA ESG LEADERS UCITS ETF,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR0011871110,PUST,Amundi PEA Nasdaq-100 UCITS ETF - EUR ACC (PUST),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0011871110,PUST,Amundi PEA Nasdaq-100 UCITS ET,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0011871110,PUST,Amundi PEA Nasdaq-100 UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0011871110,1rTPUST,Amundi PEA Nasdaq-100 UCITS ETF Acc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0011871110,PUST,Amundi PEA Nasdaq-100 UCITS ETF Acc,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR0011871128,PSP5,Amundi PEA SP 500 UCITS ETF Acc (PSP5),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0011871128,PSP5,Amundi PEA S&P 500 UCITS ETF A,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0011871128,PSP5,Amundi PEA S&P 500 UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0011871128,1rTPSP5,Amundi PEA S&amp;P 500 UCITS ETF Acc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0011871128,PSP5,Amundi PEA S&P 500 UCITS ETF Acc,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR0011871136,PSPH,Amundi PEA S&P 500 UCITS ETF - EUR ACC H (PSPH),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0011871136,PSPH,AMUNDI ASSET MANAGEMENT SA,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0011871136,PSPH,Amundi PEA S&P 500 UCITS ETF EUR Hedged Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0011871136,1rTPSPH,Amundi PEA S&amp;P 500 UCITS ETF EUR H Acc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0011882364,AWAT,Amundi PEA Eau (MSCI Water) UCITS ETF - Capi - EUR ACC (AWAT),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0011882364,AWAT,Amundi PEA Eau (MSCI Water) UC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0011882364,AWAT,Amundi PEA Eau (MSCI Water) UCITS ETF - Capi,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0011882364,1rTAWAT,Amundi PEA Eau (MSCI Water) ETF Capi,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0011882364,AWAT,Amundi PEA Eau (MSCI Water) UCITS ETF - Capi,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR0012399731,MSEC,Amund EURO STOXX 50 II,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0012399772,MSEX,MULTI UNITS FRANCE AMUNDI EURO,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0012399806,MSEU,MULTI UNITS FRANCE LYXOR EURO,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0012739431,ETDD,BNP PARIBAS EASY EURO STOXX 50 UCITS ETF - C ACC (ETDD),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0012739431,ETDD,BNP Paribas Easy EURO STOXX 50,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0012739431,1rTETDD,BNPP Easy Euro Stoxx 50 ETF EUR C,BNP PARIBAS ASSET MANAGEMENT Europe,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0012740983,ETBB,BNP PARIBAS EASY EURO STOXX 50 UCITS ETF - C/D DIS (ETBB),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0012740983,ETBB,BNP Paribas Easy EURO STOXX 50,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0012740983,1rTETBB,BNPP Easy Euro Stoxx 50 ETF EUR C/D,BNP PARIBAS ASSET MANAGEMENT Europe,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0013041530,ESEH,BNP PARIBAS EASY S&P 500 UCITS ETF - EUR ACC H (ESEH),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0013041530,ESEH,THEAM EASYETF BNP PARIBAS EASY,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0013041530,1rTESEH,BNPP Easy S&amp;P 500 ETF EUR H,BNP PARIBAS ASSET MANAGEMENT Europe,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0013346681,OBLI,AMUNDI PEA EURO COURT TERME UCITS ETF - ACC (OBLI),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0013346681,OBLI,AMUNDI PEA EURO COURT TERME UC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0013346681,OBLI,Amundi PEA Euro Court Terme UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0013346681,1rTOBLI,Amundi PEA Euro Court Terme UCITS ETF,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0013346681,OBLI,Amundi PEA Euro Court Terme UCITS ETF Acc,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR0013380607,CACC,Amundi CAC 40 UCITS ETF - EUR ACC (CACC),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0013380607,CACC,Amundi CAC 40 UCITS ETF Acc,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0013380607,CACC,Amundi CAC 40 UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0013380607,1rTCACC,Amundi CAC 40 ETF Acc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0013411980,PTPXE,Amundi PEA Japon (TOPIX) UCITS ETF - EUR DIS (PTPXE),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0013411980,PTPXE,Amundi PEA Japon (TOPIX) UCITS,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0013411980,PTPXE,Amundi PEA Japon (TOPIX) UCITS ETF EUR Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0013411980,1rTPTPXE,Amundi PEA Japon Topix ETF EUR Acc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0013411980,PTPXE,AMUNDI PEA JAPAN TOPIX UCITS ETF - EUR (C/D),Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR0013411998,PTPXH,Amundi PEA Japon (TOPIX) UCITS ETF - EUR DIS H (PTPXH),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0013411998,PTPXH,Amundi PEA Japon (TOPIX) UCITS,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0013411998,PTPXH,Amundi PEA Japon (TOPIX) UCITS ETF EUR Hedged Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0013411998,1rTPTPXH,Amundi PEA Japon Topix ETF Hdg EUR,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0013412004,PALAT,Amundi PEA MSCI Emerging Latin America Selection UCITS ETF - EUR DIS (PALAT),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0013412004,PALAT,Amundi PEA Amerique Latine (MS,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0013412004,PALAT,Amundi PEA MSCI Emerging Latin America Selection UCITS ETF - Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0013412004,1rTPALAT,Amundi PEA AL MSCI Emerg LA Sel ETF Acc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0013412012,PAASI,AMUNDI PEA MSCI EMERGING ASIA ESG LEADERS UCITS ETF - EUR DIS (PAASI),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0013412012,PAASI,Amundi PEA Asie Emergente (MSC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0013412012,PAASI,Amundi PEA Asie Emergente (MSCI Emerging Asia) Screened UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0013412012,1rTPAASI,Amundi PEA Asie Émerg MSCI ScrUCITS ETFC,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0013412020,PAEEM,Amundi PEA Emergent (MSCI Emerging) ESG Transition UCITS ETF - EUR DIS (PAEEM),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0013412020,PAEEM,Amundi PEA Emergent (MSCI Emer,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0013412020,PAEEM,Amundi PEA Emergent (MSCI Emerging) ESG Transition UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0013412020,1rTPAEEM,Amundi PEA Émerg MSCI ESG Tr UCITS ETFC,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0013412020,PAEEM,AMUNDI PEA MSCI EMERGING MARKETS ESG LEADERS UCITS ETF,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR0013412038,PCEU,Amundi PEA MSCI Europe UCITS ETF - EUR DIS (PCEU),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0013412038,PCEU,Amundi PEA MSCI Europe UCITS E,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0013412038,PCEU,Amundi PEA MSCI Europe UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0013412038,1rTPCEU,Amundi PEA MSCI Europe ETF Acc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0013412269,PANX,Amundi PEA US Tech Screened UCITS ETF - EUR DIS (PANX),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0013412269,PANX,Amundi PEA US Tech Screened UC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0013412269,PANX,Amundi PEA US Tech Screened UCITS ETF - Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0013412269,1rTPANX,Amundi PEA US Tech Screened ETFAcc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0013412269,PANX,AMUNDI PEA US TECH ESG UCITS ETF,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR0013412285,PE500,Amundi PEA S&P 500 Screened UCITS ETF - EUR ACC (PE500),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0013412285,PE500,AMUNDI ASSET MANAGEMENT AMUNDI,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0013412285,PE500,Amundi PEA S&P 500 Screened UCITS ETF - Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0013412285,1rTPE500,Amundi PEA S&amp;P 500 Scrn UCITS ETF - Acc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0013412285,PE500,AMUNDI PEA S&P 500 ESG UCITS ETF,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR0013412293,P500H,Amundi PEA S&P 500 Screened UCITS ETF - EUR DIS H (P500H),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0013412293,P500H,AMUNDI ASSET MANAGEMENT AMUNDI,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0013412293,P500H,Amundi PEA S&P 500 Screened UCITS ETF - EUR Hedged Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR0013412293,1rTP500H,Amundi PEA S&amp;P 500 Scrn UCITSETFHdgAcc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0013412293,P500H,AMUNDI PEA S&P 500 UCITS ETF - DAILY HEDGED EUR (C/D),Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR0014002H76,MIBA,Amundi FTSE MIB UCITS ETF-A,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0014002H76,MIBA,Amundi FTSE MIB UCITS ETF Acc,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR001400KE06,COSE,Amundi PEA S&P US Consumer Staples Screened UCITS ETF - EUR ACC (COSE),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR001400KE06,COSE,Amundi PEA S&P US Consumer Sta,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR001400KE06,COSE,Amundi PEA S&P US Consumer Staples Screened UCITS ETF - Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR001400KE06,1rTCOSE,AMUNDI PEA S&amp;P US Cns Stp ScnUCITSETFAcc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR001400KE06,COSE,AMUNDI PEA S&P US CONSUMER STAPLES ESG UCITS ETF - ACC,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR001400KH45,USVE,Amundi PEA MSCI USA Value Advanced UCITS ETF - EUR ACC (USVE),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR001400KH45,USVE,Amundi PEA MSCI USA Value Adva,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR001400KH45,USVE,Amundi PEA MSCI USA Value Advanced UCITS ETF - Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR001400KH45,1rTUSVE,Amundi PEA MSCI USA ValAdv UCITS ETF-Acc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR001400KH45,USVE,Amundi PEA MSCI USA Value ESG UCITS ETF - Acc,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR001400S9V0,MLUX,Amundi PEA Luxe Mnd UCITS ETF Acc (MLUX),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR001400S9V0,MLUX,Amundi PEA Luxe Monde UCITS ET,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR001400S9V0,MLUX,Amundi PEA Luxe Monde UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR001400S9V0,1rTMLUX,Amundi PEA Luxe Mnd UCITS ETF Acc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR001400S9V0,MLUX,Amundi PEA Luxe Monde UCITS ETF Acc,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR001400U5Q4,DCAM,AMUNDI PEA MONDE (MSCI World) UCITS ETF - Acc EUR ACC (DCAM),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR001400U5Q4,DCAM,AMUNDI PEA MONDE MSCI World UC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR001400U5Q4,DCAM,Amundi PEA Monde (MSCI World) UCITS ETF,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+FR001400U5Q4,1rTDCAM,Amundi PEA Monde (MSCI World) UCITS ETF,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR001400U5Q4,DCAM,Amundi PEA Monde (MSCI World) UCITS ETF,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+FR001400XS96,CM5E,CM-AM Euro Stoxx 50 UCITS ETF (CM5E),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR001400XS96,CM5E,CM-AM Euro Stoxx 50 UCITS ETF,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR001400XS96,1rTCM5E,CM-AM Euro Stoxx 50 UCITS ETF,Crédit Mutuel Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR001400ZGO4,PEMS,Amundi PEA Emergent (MSCI Emerging) ESG Transition UCITS ETF - S EUR ACC (PEMS),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR001400ZGO4,PEMS,Amundi PEA Emergent (MSCI Emer,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR001400ZGO4,1rTPEMS,Amundi PEA MSCI Emrg ESG Trns ETF S-Acc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR001400ZGP1,MSES,Amundi EURO STOXX 50 II UCITS ETF - S ACC (MSES),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR001400ZGP1,MSES,Amundi EURO STOXX 50 II UCITS,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR001400ZGP1,1rTMSES,Amundi EuroStoxx 50 II ETF S-Acc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR001400ZGQ9,CA40,Amundi CAC 40 UCITS ETF - S EUR ACC (CA40),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR001400ZGQ9,CA40,Amundi CAC 40 UCITS ETF S - Ac,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR001400ZGQ9,1rTCA40,Amundi CAC 40 UCITS ETF S-Acc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR001400ZGR7,PNAS,Amundi PEA Nasdaq-100 UCITS ETF - S EUR ACC (PNAS),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR001400ZGR7,PNAS,Amundi PEA Nasdaq-100 UCITS ET,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR001400ZGR7,1rTPNAS,Amundi PEA Nasdaq-100 UCITS ETF S-Acc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR001400ZGS5,PSPS,Amundi PEA S&P 500 Screened UCITS ETF - S EUR ACC (PSPS),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR001400ZGS5,PSPS,Amundi PEA S&P 500 Screened UC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR001400ZGS5,1rTPSPS,Amundi PEA SP 500 Scrn UCITS ETF S-Acc,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+FR0014010HV4,LWLD,Amundi MSCI World (2x) Leveraged UCITS ETF - USD ACC (LWLD),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0014010HV4,LWLD,Amundi MSCI World (2x) Leverag,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0014017NX3,GPEA,Amundi PEA Global (MSCI ACWI) UCITS ETF Acc (GPEA),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+FR0014017NX3,GPEA,Amundi PEA Global (MSCI ACWI),,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+FR0014017NX3,1rTGPEA,Amundi PEA Global MSCI ACWI UCITS ETF A,Amundi Asset Management,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+IE00004PGEY9,JREZ,JPMORGAN ETFS (IRELAND) ICAV J,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE0002921975,FME63,METZLER-METZ.EUR.SM.COS.A,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE0002XZSHO1,WPEA,iShares MSCI World Swap PEA UCITS ETF - EUR ACC (WPEA),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+IE0002XZSHO1,WPEA,iShares MSCI World Swap PEA UC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE0002XZSHO1,1rTWPEA,iShares MSCI World Swap PEA ETF,BlackRock Asset Management Ireland,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+IE00055B2JD3,WPEH,iShares MSCI World Swap PEA UCITS ETF - EUR ACC H (WPEH),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+IE00055B2JD3,WPEH,iShares MSCI World Swap PEA UC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00055B2JD3,1rTWPEH,ISHARES MSCI WORLD SWAP PEA ETF  H ACC,BlackRock Asset Management Ireland,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+IE00069H3LK0,VESC,Vanguard FTSE Developed Europe,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE0008471009,EUEA,iShares Core EURO STOXX 50 UCITS ETF EUR (Dist) - DIS (EUEA),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+IE0008471009,EUEA,iShares Core EURO STOXX 50 UCI,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE0008471009,1rAEUEA,iShares Core EURO STOXX 50 ETF EUR Dist,BlackRock Asset Management Ireland,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+IE000AFVONT7,WBLD,WisdomTree Europe Infrastructure UCITS ETF - EUR ACC (WBLD),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+IE000AFVONT7,WBLD,WisdomTree Europe Infrastructu,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE000DQLYVB9,SPEA,iShares S&P 500 Swap PEA UCITS ETF EUR (Acc) (SPEA),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+IE000DQLYVB9,SPEA,iShares S&P 500 Swap PEA UCITS,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE000FOSCLU1,MPAB,iShares MSCI EMU Paris-Aligned Climate UCITS ETF - EUR DIS (MPAB),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+IE000FOSCLU1,MPAB,iShares MSCI EMU Paris-Aligned,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE000FOSCLU1,1rAMPAB,iShares MSCI EMU Paris-Algnd ClmtETFDis,BlackRock Asset Management Ireland,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+IE000I4R3252,EPEA,iShares EUR Short Term Swap PEA UCITS ETF EUR (Acc) (EPEA),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+IE000I4R3252,EPEA,iShares  Short Term Swap PEA E,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE000K7PC2G4,VESD,Vanguard FTSE Developed Europe,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE000MWUQBJ0,H50A,HSBC EURO STOXX 50 UCITS ETF E,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE000OV4XWA3,XPAR,WisdomTree Eurozone Efficient Core UCITS ETF - EUR ACC (NTSZ-XPAR),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+IE000OV4XWA3,NTSZ-XPAR,WisdomTree Eurozone Efficient,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE000OV4XWA3,1rTNTSZ,WisdomTree Eurozone Effict Cr ETF EURAcc,WisdomTree Management Limited,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+IE000PS0J481,BRIJ,GLOBAL X ETFS ICAV EUROPEAN IN,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE000Q4J3CW6,VEZU,Vanguard FTSE Eurozone UCITS E,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE000VH3JSL8,VEZI,Vanguard FTSE Eurozone UCITS E,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE0033009238,FU65I,J O H.C.M.U.FD-CO.EU.A EO,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00B23D8X81,PSRE,INVESCO MARKETS III PLC INVESC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00B4K6B022,50E,HSBC EURO STOXX 50 UCITS ETF - DIS (50E),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+IE00B4K6B022,50E,HSBC EURO STOXX 50 ETF,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00B4K6B022,1rT50E,HSBC EURO STOXX 50 ETF,HSBC Investment Funds (Luxembourg) S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+IE00B53L3W79,CSX5,iShares Core EURO STOXX 50 UCITS ETF - ACC (CSX5),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+IE00B53L3W79,CSX5,iShares Core EURO STOXX 50 UCI,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00B53L3W79,1rACSX5,iShares Core EURO STOXX 50 ETF EUR Acc,BlackRock Asset Management Ireland,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+IE00B53QG562,CEMU,iShares Core MSCI EMU UCITS ETF - EUR ACC (CEMU),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+IE00B53QG562,CEMU,iShares Core MSCI EMU UCITS ET,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00B53QG562,1rACEMU,iShares Core MSCI EMU UCITS ETF EUR Acc,BlackRock Asset Management Ireland,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+IE00B5M1WJ87,EUDV,State Street SPDR S&P Euro Dividend Aristocrats UCITS ETF - EUR DIS (EUDV),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+IE00B5M1WJ87,EUDV,SSGA SPDR ETFS EUROPE I PLC S&,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00B5M1WJ87,1rTEUDV,Stt Strt SPDR S&amp;P EUR DivAristETF,State Street Global Advisors Europe Limited,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+IE00B8X9NY41,FEUZ,First Trust Eurozone AlphaDEX UCITS ETF - A EUR ACC (FEUZ),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+IE00B8X9NY41,FEUZ,First Trust Eurozone Alphadex,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00B8X9NY41,1rAFEUZ,First Trust Eurozone AlphaDEX(r) ETF A,First Trust Global Portfolios Management Limited,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+IE00B8X9NZ57,FKU,FIRST TRUST GLOBAL FUNDS ICAV,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00B910VR50,ZPRE,SPDR MSCI EMU UCITS ETF,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00BF2FL590,FEUD,FIRST TRUST GLOBAL FUNDS ICAV,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00BFNM3B99,SAUM,ISHARES IV PLC ISH MSCI EMU ES,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00BFNM3C07,SMUD,ISHARES IV PLC ISH MSCI EMU ES,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00BFTWP510,ZPRL,SPDR EURO STOXX L.VOL. UE,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00BG0J9Y53,h,iShares Core MSCI EMU UCITS ETF - GBP DIS H,,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+IE00BG0J9Y53,CEUG,ISHARES VII PLC ISH MSCI EMU U,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00BG143G97,VGER,VANGUARD FUNDS PLC VANGUARD GE,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00BHZPHZ28,EMUD,ISHARES IV PLC MSCI EMU ESG EN,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00BHZPJ015,EDM4,ISHSIV-M.EMU ESC ENH.EOA,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00BJLKK341,SMUA,iShares MSCI EMU SRI UCITS ETF - EUR ACC (SMUA),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+IE00BJLKK341,SMUA,iShares MSCI EMU SRI UCITS ETF,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00BJLKK341,1rASMUA,iShares MSCI EMU SRI ETF EUR Acc,BlackRock Asset Management Ireland,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+IE00BK5BQY34,VERE,VANGUARD FUNDS PLC FTSE DEV EU,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00BKBF6616,CEUU,iShares Core MSCI EMU UCITS ETF - USD ACC H (CEUU),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+IE00BKBF6616,CEUU,iShares Core MSCI EMU UCITS ET,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00BKX55S42,VERX,Vanguard FTSE Developed Europe ex UK UCITS ETF - EUR DIS (VERX),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+IE00BKX55S42,VERX,Vanguard FTSE Developed Europe,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00BKX55S42,1rAVERX,Vanguard FTSE Dev Eurp ex UK ETF Dis,Vanguard Group (Ireland) Limited,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+IE00BL6K8D99,EMPA,iShares MSCI EMU Paris-Aligned Climate UCITS ETF - EUR ACC (EMPA),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+IE00BL6K8D99,EMPA,iShares MSCI EMU Paris-Aligned,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00BL6K8D99,1rAEMPA,iShares MSCI EMU Paris-Algnd ClmtETFAcc,BlackRock Asset Management Ireland,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+IE00BMW42413,ESIT,ISHARES VI PLC MSCI EUROPE INF,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00BP3QZJ36,IFRE,iShares MSCI France UCITS ETF - EUR ACC (IFRE),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+IE00BP3QZJ36,IFRE,iShares MSCI France UCITS ETF,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00BP3QZJ36,1rAIFRE,iShares MSCI France ETF EUR Acc,BlackRock Asset Management Ireland,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+IE00BWTNM966,FTGG,FIR.T.G.-GER.ALPHDEX A EO,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00BYXZ2585,CEUD,ISHARESCOREMSCIEMU(DIST) UCITS,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00BZ56SY76,EGRW,WISDOMTREE ISSUER ICAV WISDOMT,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+IE00BZ56TQ67,EGRA,WisdomTree Eurozone Quality Dividend Growth UCITS ETF - EUR ACC (EGRA),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+IE00BZ56TQ67,EGRA,WisdomTree Eurozone Quality Di,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0011889846,FHZ5A,HEND.HORIZ.EUROLAN.A2 ACC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0030165871,FXZGL,SEB FUND 1-NORDIC C,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0048580004,FFJ2L,FID.FDS-GERMANY A GL.,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0048581077,FFJRK,FID.FDS-IBERIA FD  A GL.,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0048584766,FFJRL,FID.FDS-ITALY A GL.,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0048588080,FFPG1,FID.FDS-NORDIC FD  A GL.,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0087656699,FAW44,AXA WLD-FRAM.ITALY A T,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0089640097,FJPJG,JPM-EOLND.EQ.JPMEE ADEO,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0091115906,FZPJB,SISF EURO EQUITY A DIS,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0091116110,FSRV7,SISF EURO EQUITY B DIS,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0091116201,FZPJN,SISF EURO EQUITY C DIS,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0093502762,FMI9A,BGF-EO-MARKETS NAM.A2,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0093666013,FTEPT,F.TEM.INV-T.EUROLND A ACC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0095325956,FXAYC,AB FCPI-EUROZ.EQ.PTF AXEO,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0099161993,FC5Q1,CARMIGNAC PO.-GR.EUR.AEOA,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0106235293,FZPJA,SISF EURO EQUITY A ACC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0106235459,FZPJC,SISF EURO EQUITY C ACC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0117858166,FJP5R,JPM-EOLND.EQ.JPMEE DAEO,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0124167924,FFP7A,FPM-STOCKP.GERM.ALL CAP C,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0125946151,FFHTC,MFS M.-EURO.CORE EQ.A1 EO,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0128521001,FTES6,F.TEM.INV-EUROLND N ACC.,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0129233093,FLPJD,LUPUS ALP.-SM.GER.CHAMP.A,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0133706308,FSRVV,SISF EURO EQUITY A1 ACC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0136234068,UIM1,UBS (Lux) Fund Solutions - UBS Core EURO STOXX 50 UCITS ETF - DIS (UIM1),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU0136234068,UIM1,UBS (LUX) FUND SOLUTIONS,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0136234068,1rAUIM1,UBS Core EURO STOXX 50 ETF EUR dis,UBS Asset Management (Europe) S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU0145634076,FDWS8,DE.INV.I-TOP EUROPE LC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0145634662,FDWS6,DE.INV.I-TOP EUROPE LD,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0145635123,FDWS5,DE.INV.I-TOP EUROPE NC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0145644893,FDWS9,DE.INV.I-TOP EUROL.LC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0145647052,FDWS1,DE.INV.I-TOP EUROL.LD,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0145647300,FDWS2,DE.INV.I-TOP EUROL.NC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0145647722,FDWS3,DE.INV.I-TOP EUROL.FC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0162689763,FERDM,BGF-EO-MARKETS NAM.A4EO,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0165073775,FJSGJ,HSBC GIF-EOL.EQ.S.E.E.A C,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0165073858,FJHS7,HSBC GIF-EOL.EQ.S.E.E.A.D,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0165074666,FJM5F,HSBC GIF-EUROLAND EQ.A C,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0165074740,FJSGK,HSBC GIF-EUROLAND EQ.A D,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0187937411,FMAM3,FIDECUM-AVANT-GARDE S.A,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0187937684,FMAM4,FIDECUM-AVANT-GARDE S.C,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0210529490,FJYJZ,JPM-EOLND.EQ.JPMEE AA,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0235308482,FAAL1,ALKEN FD-EUROP.OPPORT.R,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0238202427,FFPGG,FID.FDS-EUROP FD A ACC.EO,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0247695934,FHZ58,HEND.HORIZ.EUROLAN.X ACC,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0252633754,DAX,Amundi DAX II - UCITS ETF Acc EUR ACC (DAX),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU0252633754,DAX,Amundi DAX II UCITS ETF Acc,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0252633754,1rTDAX,Amundi DAX II ETF Acc,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU0252633754,DAX,Amundi DAX III UCITS ETF Acc,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+LU0252634307,LVD,Amundi LevDax Daily (2x) leveraged - UCITS ETF Acc EUR ACC (LVD),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU0252634307,LVD,Amundi LevDax Daily (2x) lever,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0255980913,FPJAD,PICTET-EUROL.IND.NA.PEO,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0256839944,FDJEC,AGIF-EOLAND EQU.GRTH A EO,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0256840447,FDJEE,AGIF-EOLAND EQU.GRTH ATEO,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0261948227,FXC4B,FID.FDS-GERMANY A ACC.EUR,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0274211217,XESX,XTRACKERS XTRACKERS EURO STOXX,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0274211480,XDAX,XTRACKERS DAX UCTSETF 1C EUR A,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0292095535,XD3E,XTRACKERS EURO STOXX QUALITY D,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0294249692,FC5Q8,CARMIGNAC PO.-GR.EUR.EEOA,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0300507034,FG749,GEN.IN.-EO EQU.M.CAP DXEO,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0308864023,FMAM8,MAINFIRST-TOP EUR.ID.FD A,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0347565383,FAAL3,ALKEN FD-EUROP.OPPORT.U,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0370217092,FNLUF,FIDECUM-CONTR.VAL.EUROL.A,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0379090680,FXTKR,SSGA LUX.-EMU EQU.FD P,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0380865021,XESC,XTRACKERS X EURO STOXX 50 1C,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0389656892,FXRU5,AXA WLD-FRAML.EUROZ.AC EO,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0390221256,FMAM9,MAINFIRST-GERMANY FUND A,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0390221686,FMAMK,MAINFIRST-GERMANY FUND B,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0390221926,FMAMA,MAINFIRST-GERMANY FUND C,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0417818076,FNDJT,NORD.1-EUR.SM.+M.C.E.APEO,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0568607203,F10AA,AMUNDI-EQ.EURO.S.C.AE CAP,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0599612842,EUMV,OSSIAM LUX EUROPE ESG MACHINE,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0599613147,S6EW,OSSIAM LUX EURP 600 EQUAL WEIG,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0599613147,1rTS6EW,Ossiam Lux -OssmSTXX(r)Er600ESGqWgNRTF1C,OSSIAM,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU0629460675,UIMR,UBS (Lux) Fund Solutions - UBS MSCI EMU Socially Responsible UCITS ETF - EUR DIS (UIMR),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU0629460675,UIMR,UBS MSCI EMU Socially Responsi,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0629460675,1rAUIMR,UBS MSCI EMU Socially Resp ETF EUR dis,UBS Asset Management (Europe) S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU0740822977,FFF95,DE.INV.I-GERMAN EQTS. LD,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0811899946,0HAB,OSSIAM LUX EUROPE ESG MACHINE,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0823401731,FXU6U,PAR.-EQ.B.SEL.EO CL.DIS,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0838782315,XDDX,XTRACKERS DAX ESG SCREENED UCI,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0840617350,FAH8J,AGIF-GERMAN EQUITY AT EO,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0846194776,XD5E,XTRACKERS MSCI EMU IDX UCITS E,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0908501058,MFED,AMUNDI MSCI EMU ESG Broad Transition - UCITS ETF ACC EUR ACC (MFED),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU0908501058,MFED,Amundi MSCI EMU ESG Broad Tran,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0908501058,1rTMFED,Amundi MSCI EMU ESG Brd Trnstn ETF ACC,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU0908501058,MFED,Amundi MSCI EMU ESG CTB Net Zero Ambition UCITS ETF Acc,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+LU0908501132,MFDD,AMUNDI INDEX SOLUTIONS AMUNDI,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU0950674761,EMUSRI,UBS MSCI EMU Socially Responsi,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1079842321,CAPE,Ossiam Shiller Barclays Cape Europe Sector Value TR - UCITS ETF 1C (EUR) USD ACC (CAPE),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1079842321,CAPE,OSSIAM Shiller Barclays CAPE E,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1079842321,1rTCAPE,Ossiam Lux -OssmShllerBrclysCp(r)SVlTRTF1C,OSSIAM,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1221100792,0HDC,XTRACKERS DAX ESG SCREENED UCI,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1221102491,XDCH,X DAX INCOME CHF H,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1273642816,EUSRS,UBSETF MSEMUSIhCHFa,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1273642907,EUSRT,UBSETF MSEMUSIhCHFd,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1280300770,0HE1,UBS (LUX) FUND SOLUTIONS SICAV,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1280300853,EUSR,UBS (LUX) FUND SOLUTIONS UBS E,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1291098827,EEMU,BNP PARIBAS EASY MSCI EMU Min TE - UCITS ETF EUR ACC (EEMU),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1291098827,EEMU,BNP PARIBAS EASY MSCI EMU Min,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1291098827,1rTEEMU,BNPP E MSCI EMU MIN TE ETF EUR,BNP Paribas Asset Management Luxembourg,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1327051279,DSP5,Amundi Nasdaq-100 Daily (-1x) Inverse UCITS ETF - USD ACC (DSP5),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1327051279,DSP5,MULTI UNITS LUXEMBOURG,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1349386927,XDDA,XTR.DAX 1D,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1377381717,EVOE,BNP Paribas Easy ESG Equity Low Vol Europe UCITS ETF Cap (EVOE),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1377381717,EVOE,BNP PARIBAS EASY Low Vol Europ,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1377381717,1rTEVOE,BNP Paribas Easy Low Vol Europe ETF C,BNP Paribas Asset Management Luxembourg,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1377382103,EQUA,BNP Paribas Easy ESG Equity Quality Europe UCITS ETF Cap (EQUA),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1377382103,EQUA,BNP PARIBAS EASY Quality Europ,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1377382103,1rTEQUA,BNP Paribas Easy Quality Europe ETF Cap,BNP Paribas Asset Management Luxembourg,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1377382285,EVAE,BNP Paribas Easy ESG Equity Value Europe UCITS ETF Cap (EVAE),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1377382285,EVAE,BNP PARIBAS EASY Value Europe,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1377382285,1rTEVAE,BNP Paribas Easy Value Europe ETF Cap,BNP Paribas Asset Management Luxembourg,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1481201025,VLED,BNP Paribas Easy ESG Equity Low Vol Europe UCITS ETF Dis (VLED),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1481201025,VLED,BNP Paribas Easy Low Vol Europ,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1481201025,1rTVLED,BNP Paribas Easy Low Vol Europe ETF D,BNP Paribas Asset Management Luxembourg,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1481201611,QUED,BNP Paribas Easy ESG Equity Quality Europe UCITS ETF Dis (QUED),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1481201611,QUED,BNP Paribas Easy Quality Europ,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1481201611,1rTQUED,BNP Paribas Easy Quality Europe ETF Dis,BNP Paribas Asset Management Luxembourg,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1481201702,VALD,BNP Paribas Easy ESG Equity Value Europe UCITS ETF Dis (VALD),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1481201702,VALD,BNP Paribas Easy Value Europe,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1481201702,1rTVALD,BNP Paribas Easy Value Europe ETF Dis,BNP Paribas Asset Management Luxembourg,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1598689153,MMS,Amundi MSCI EMU Small Cap ESG Broad Transition - UCITS ETF DIST EUR DIS (MMS),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1598689153,MMS,Amundi MSCI EMU Small Cap ESG,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1598689153,MMS,Amundi MSCI EMU Small Cap ESG Broad Transition UCITS ETF Dist,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+LU1598689153,1rTMMS,Amundi MSCI EMU SmCapESGBrdTrnstnETFDIS,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1598690169,VAL,Amundi MSCI EMU Value Factor - UCITS ETF Dist EUR DIS (VAL),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1598690169,VAL,Amundi MSCI EMU Value Factor,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1598690169,VAL,Amundi MSCI EMU Value Factor UCITS ETF Dist,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+LU1598690169,1rTVAL,Amundi MSCI EMU Value Factor ETF Dis,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1602144575,CMU,Amundi MSCI EMU ESG Selection - UCITS ETF DR EUR ACC (CMU),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1602144575,CMU,Amundi MSCI EMU ESG Selection,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1602144575,1rTCMU,Amundi MSCI EMU ESG Sel ETF DR EUR C,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1602144575,CMU,Amundi MSCI EMU ESG Leaders Select UCITS ETF DR - EUR (C),Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+LU1615090864,EDEU,BNP PARIBAS EASY Dividend Europe - UCITS ETF EUR ACC (EDEU),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1615090864,EDEU,BNP Paribas Easy Dividend Euro,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1615090864,1rTEDEU,BNP Paribas Easy Dividend Eurp ETF Cap,BNP Paribas Asset Management Luxembourg,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1646360971,MFE,Amundi Core MSCI EMU - EUR DIS (MFE),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1646360971,MFE,Amundi Core MSCI EMU UCITS ETF,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1646360971,1rTMFE,Amundi Core MSCI EMU ETF Dis,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1646360971,MFE,Amundi MSCI EMU UCITS ETF Dist,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+LU1646361276,MFEC,Amundi Core MSCI EMU - EUR ACC (MFEC),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1646361276,MFEC,Amundi Core MSCI EMU UCITS ETF,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1646361276,1rTMFEC,Amundi Core MSCI EMU ETF Acc,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1655103486,OP4E,Ossiam Bloomberg Europe ex Eur,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1655103486,1rTOP4E,Ossiam Lux-OSSAMBLMBRGRPexURZNPABNR1CEUR,OSSIAM,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1655103643,OP5E,Ossiam Bloomberg Japan PAB NR,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1655103643,1rTOP5E,Ossiam Lux-OSSIAM BLOOMBERG JAPAN PAB NR,OSSIAM,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1655103726,OP5H,Ossiam Bloomberg Japan PAB NR,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1655103726,1rTOP5H,Ossiam Lux-OSSAMMSCIJAPANNR1CHdgdIndxEUR,OSSIAM,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1659681313,1rTEISR,BNPP E MSCI Em SRI PAB ETF EURDis,BNP Paribas Asset Management Luxembourg,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1681037518,FMI,AMUNDI ITALY MIB ESG - EUR ACC (FMI),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1681037518,FMI,Amundi Italy MIB ESG UCITS ETF,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1681037518,1rTFMI,Amundi IS ITALY MIB ESG ETF DR - EUR C,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1681037518,FMI,Amundi Italy MIB ESG UCITS ETF DR - EUR (C),Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+LU1681038672,RS2K,AMUNDI RUSSELL 2000 - UCITS ETF - EUR ACC (RS2K),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1681038672,RS2K,AMUNDI RUSSELL 2000 UCITS ETF,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1681038672,RS2K,Amundi Russell 2000 UCITS ETF - EUR (C),Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+LU1681038672,1rTRS2K,Amundi IS Russell 2000 ETF-C EUR,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1681038672,RS2K,AMUNDI RUSSELL 2000 UCITS ETF - EUR (C),Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+LU1681038839,RS2U,AMUNDI RUSSELL 2000 - UCITS ETF - USD ACC (RS2U),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1681038839,RS2U,AMUNDI INDEX SOLUTIONS AMUNDI,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1681038839,1rTRS2U,Amundi IS Russell 2000 ETF-C USD,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1681042864,CU2,Amundi PEA MSCI USA ESG Selection - UCITS ETF - EUR ACC (CU2),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1681042864,CU2,Amundi PEA MSCI USA ESG Select,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1681042864,CU2,Amundi PEA MSCI USA ESG Selection UCITS ETF - EUR,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+LU1681042864,1rTCU2,Amundi PEA MSCI USA ESG Sel ETF - EUR,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1681042948,CU2U,Amundi PEA MSCI USA ESG Selection - UCITS ETF - USD ACC (CU2U),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1681042948,CU2U,AMUNDI INDEX SOLUTIONS AMND PE,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1681042948,XAMX,Amundi PEA MSCI USA ESG Selection UCITS ETF - USD,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+LU1681042948,1rTCU2U,Amundi PEA MSCI USA ESG Sel ETF - USD,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1681043599,CW8,Amundi MSCI World Swap - UCITS ETF - EUR ACC (CW8),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1681043599,CW8,Amundi MSCI World Swap UCITS E,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1681043599,CW8,Amundi MSCI World Swap UCITS ETF EUR Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+LU1681043599,1rTCW8,Amundi IS MSCI World Swap ETF EUR Acc,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1681043599,CW8,Amundi MSCI World UCITS ETF - EUR (C),Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+LU1681043672,CW8U,Amundi MSCI World Swap - UCITS ETF - USD ACC (CW8U),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1681043672,CW8U,AMUNDI INDEX SOLUTIONS AMUNDI,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1681043672,1rTCW8U,Amundi IS MSCI World Swap ETF USD Acc,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1681046931,C40,AMUNDI CAC 40 ESG UCITS ETF DR - EUR (C) (C40),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1681046931,C40,AMUNDI CAC 40 ESG UCITS ETF Ac,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1681046931,C40,Amundi CAC 40 ESG UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+LU1681046931,1rTC40,Amundi IS CAC 40 ESG DR ETF-C,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1681046931,C40,Amundi CAC 40 ESG UCITS ETF DR - EUR (C),Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+LU1681047079,C4D,AMUNDI CAC 40 ESG UCITS ETF DR - EUR (D) (C4D),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1681047079,C4D,AMUNDI CAC 40 ESG UCITS ETF Di,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1681047079,1rTC4D,Amundi IS CAC 40 ESG DR ETF-D,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1681047236,C50,Amundi Core EURO STOXX 50 - UCITS ETF DR - EUR ACC (C50),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1681047236,C50,Amundi Core EURO STOXX 50 UCIT,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1681047236,1rTC50,Amundi Core EURO STOXX 50 ETF EUR Acc,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1681047236,C50,Amundi EURO STOXX 50 UCITS ETF DR - EUR (C),Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+LU1681047319,CD5,Amundi Core EURO STOXX 50 - UCITS ETF DR - EUR (D) DIS (CD5),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1681047319,CD5,Amundi Core EURO STOXX 50 UCIT,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1681047319,1rTCD5,Amundi Core EURO STOXX 50 ETF EUR Dist,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1681047400,C50U,Amundi Core EURO STOXX 50 - UCITS ETF DR - USD ACC (C50U),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1681047400,C50U,AMUNDI INDEX SOLUTIONS AMND CO,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1681047400,1rTC50U,Amundi Core EURO STOXX 50 ETF USD Acc,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1792117340,etfacc,Lyxor Msci Emu Esg Trend Ldrs(dr)etfacc,,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1812092168,SEL,Amundi Stoxx Europe Select Dividend 30 - UCITS ETF - EUR DIS (SEL),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1812092168,SEL,Amundi Stoxx Europe Select Div,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1812092168,SEL,Amundi Stoxx Europe Select Dividend 30 - UCITS ETF Dist,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+LU1812092168,1rTSEL,Amundi Stoxx Europe Select Div 30 ETF D,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1812092168,SEL,Amundi Stoxx Europe Select Dividend 30 - UCITS ETF Dist,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+LU1829219390,BNKE,Amundi Euro Stoxx Banks UCITS ETF - EUR ACC (BNKE),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1829219390,BNKE,Amundi Euro Stoxx Banks UCITS,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1829219390,BNKE,Amundi Euro Stoxx Banks UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+LU1829219390,1rTBNKE,Amundi Euro Stoxx Banks ETF Acc,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1829219390,BNKE,Amundi Euro Stoxx Banks UCITS ETF Acc,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+LU1834983477,BNK,Amundi STOXX Europe 600 Banks - UCITS ETF Acc EUR ACC (BNK),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1834983477,BNK,Amundi STOXX Europe 600 Banks,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1834983477,BNK,Amundi STOXX Europe 600 Banks UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+LU1834983477,1rTBNK,Amundi STOXX Europe 600 Banks ETF Acc,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1834983477,BNK,Amundi STOXX Europe 600 Banks UCITS ETF Acc,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+LU1834983550,BRES,Amundi STOXX Europe 600 Basic Resources - UCITS ETF Acc EUR ACC (BRES),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1834983550,BRES,Amundi STOXX Europe 600 Basic,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1834983550,LBRE,Amundi STOXX Europe 600 Basic Resources UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+LU1834983550,1rTBRES,Amundi STOXX Eurp 600 Basic Res ETF Acc,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1834983550,BRES,Amundi STOXX Europe 600 Basic Resources UCITS ETF Acc,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+LU1834983634,CHM,Amundi STOXX Europe 600 Basic Materials UCITS ETF - EUR ACC (CHM),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1834983634,CHM,Amundi STOXX Europe 600 Basic,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1834983634,CHM,Amundi STOXX Europe 600 Basic Materials UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+LU1834983634,1rTCHM,Amundi STOXX Eurp 600 Bsc Mtrls ETF Acc,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1834985845,FOO,Amundi STOXX Europe 600 Consumer Staples UCITS ETF - EUR ACC (FOO),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1834985845,FOO,MULTI UNITS LUXEMBOURG,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1834985845,FOO,Amundi STOXX Europe 600 Consumer Staples UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+LU1834985845,1rTFOO,Amundi STOXX Eurp 600 Cnsmr Stp ETF Acc,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1834985845,FOO,Amundi STOXX Europe 600 Consumer Staples UCITS ETF Acc,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+LU1834986900,HLT,AMUNDI STOXX EUROPE 600 HEALTHCARE - ACC (HLT),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1834986900,HLT,Amundi STOXX Europe 600 Health,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1834986900,LHTC,Amundi STOXX Europe 600 Healthcare UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+LU1834986900,1rTHLT,Amundi STOXX Europe 600 Hlthcare ETF Acc,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1834986900,HLT,Amundi STOXX Europe 600 Healthcare UCITS ETF Acc,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+LU1834987890,IND,Amundi STOXX Europe 600 Industrials UCITS ETF - EUR ACC (IND),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1834987890,IND,MULTI UNITS LUXEMBOURG,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1834987890,IND,Amundi STOXX Europe 600 Industrials UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+LU1834987890,1rTIND,Amundi STOXX Europe 600 Indstr ETF Acc,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1834987973,INS,AMUNDI STOXX EUROPE 600 INSURANCE - UCITS ETF Acc ACC (INS),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1834987973,INS,Amundi STOXX Europe 600 Insura,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1834987973,INS,Amundi STOXX Europe 600 Insurance UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+LU1834987973,1rTINS,Amundi STOXX Europe 600 Ins ETF Acc,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1834988518,TNO,AMUNDI STOXX EUROPE 600 TECHNOLOGY UCITS ETF - ACC (TNO),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1834988518,TNO,Amundi STOXX Europe 600 Techno,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1834988518,TNO,Amundi STOXX Europe 600 Technology UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+LU1834988518,1rTTNO,Amundi STOXX Europe 600 Tech ETF Acc,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1834988518,TNO,Amundi STOXX Europe 600 Technology UCITS ETF Acc,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+LU1834988609,TELE,AMUNDI STOXX EUROPE 600 TELECOMMUNICATIONS - UCITS ETF Acc ACC (TELE),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1834988609,TELE,Amundi STOXX Europe 600 Teleco,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1834988609,TELE,Amundi STOXX Europe 600 Telecommunications UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+LU1834988609,1rTTELE,Amundi STOXX Europe 600 Telecms ETF Acc,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1834988781,TRV,Amundi STOXX Europe 600 Consumer Discretionary - UCITS ETF Acc EUR ACC (TRV),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1834988781,TRV,MULTI UNITS LUXEMBOURG,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1834988781,LTVL,Amundi STOXX Europe 600 Consumer Discretionary UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+LU1834988781,1rTTRV,Amundi STOXX Eurp 600 Cnsmr Disc ETF Acc,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1834988864,UTI,AMUNDI STOXX EUROPE 600 UTILITIES UCITS ETF - ACC (UTI),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1834988864,UTI,Amundi STOXX Europe 600 Utilit,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1834988864,UTI,Amundi STOXX Europe 600 Utilities UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+LU1834988864,1rTUTI,Amundi STOXX Europe 600 Utilts ETF Acc,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1847674733,OP2E,Ossiam Bloomberg Eurozone PAB NR - UCITS ETF 1C EUR ACC (OP2E),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1847674733,OP2E,Ossiam Bloomberg Eurozone PAB,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1847674733,1rTOP2E,Ossiam Lux-OSSIAM BLOOMBERGEUROZONEPABNR,OSSIAM,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1931974429,PRIZ,AMUNDI LUXEMBOURG SA PRIME EUR,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1953137681,MUSRI,BNP PARIBAS EASY MSCI EMU SRI PAB - UCITS ETF EUR ACC (MUSRI),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU1953137681,MUSRI,BNP Paribas Easy MSCI EMU SRI,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU1953137681,1rTMUSRI,BNPP E MSCI EMU SRI PAB ETF Cap,BNP Paribas Asset Management Luxembourg,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU1971906802,UET5,UBSLFS-ESTX50 ESG AEOD,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2059756325,CMUD,Amundi MSCI EMU ESG Selection - UCITS ETF DR EUR DIS (CMUD),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU2059756325,CMUD,Amundi MSCI EMU ESG Selection,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2059756325,1rTCMUD,Amundi MSCI EMU ESG Sel ETF DR EUR (D),Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU2082996112,INDA,LIF-600 BANKS EOD,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2082996385,E6BR,LIF-600 BAS.RE. EOD,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2082996542,LYX4,LIF-600 CHEMIC. EOD,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2082997359,DFOP,LIF-600 F.+BEV. EOD,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2082997516,EHLT,LIF-600 HEALTH. EOD,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2082997789,INDU,LIF-600 IN.G.+S EOD,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2082997946,EGV1,LIF-600 INSURA. EOD,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2082998837,CSTA,LIF-600 TECHN. EOD,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2082999058,INDB,LIF-600 TELEC. EOD,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2082999132,6TVL,LIF-600 TR.+LEI EOD,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2082999215,LUTL,LIF-600 UTILIT. EOD,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2089238112,PRAZ,AMUN.I.S.-A.PR.EU.UEDREOA,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2090062436,LDAX,MUL-LYX.DAX DR EOD,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2090062600,LVDX,MUL-LYX.D.L.DAX EOD,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2109787635,EESG,Amundi MSCI EMU SRI Climate Paris Aligned - UCITS ETF DR EUR ACC (EESG),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU2109787635,EESG,Amundi MSCI EMU SRI Climate Pa,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2109787635,1rALESE,Amundi MSCI EMU SRI ClmtPrsAlgdETFDRC,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU2182388582,PABZ,Amundi MSCI EMU Climate Paris Aligned - UCITS ETF EUR ACC (PABZ),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU2182388582,PABZ,Amundi MSCI EMU Climate Paris,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2182388582,1rTPABZ,Amundi MSCI EMU Clmt Paris Algd ETF Acc,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU2195226068,EPAB,Amundi S&P Eurozone Climate Paris Aligned - UCITS ETF Acc EUR ACC (EPAB),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU2195226068,EPAB,MULTI UNITS LUXEMBOURG,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2195226068,EPAB,Amundi S&P Eurozone Climate Paris Aligned UCITS ETF Acc,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+LU2195226068,1rTEPAB,Amundi S&amp;P Eurozone ClmtPrsAlgdETFAcc,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU2195226068,EPAB,Amundi S&P Eurozone PAB Net Zero Ambition UCITS ETF Acc,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+LU2240851688,DECD,AIS-DAX 50 ESG ETF UHEOA,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2244387887,EGRO,BNP PARIBAS EASY Growth Europe - UCITS ETF EUR ACC (EGRO),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU2244387887,EGRO,BNP PARIBAS EASY Growth Europe,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2244387887,1rTEGRO,BNPP Easy Growth Europe Track ETFEURCap,BNP Paribas Asset Management Luxembourg,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU2491210618,OP6E,Ossiam Bloomberg Asia Pacific,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2491210618,1rTOP6E,Ossiam Lux-OSSIAMBgAsaPfcxJpPBNR1CEURAcc,OSSIAM,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU2572256662,AHYI,AIS-PEA DJ INAV U.ETFDLD,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2572256662,AHYI,AMUNDI PEA DOW JONES INDUSTRIAL AVERAGE UCITS ETF DIST,Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+LU2655993207,EWLD,Amundi MSCI World Swap - UCITS ETF - EUR (D) DIS (EWLD),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU2655993207,EWLD,Amundi MSCI World Swap UCITS E,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU2655993207,EWLD,Amundi MSCI World Swap UCITS ETF EUR Dist,Amundi,https://www.boursedirect.fr/fr/etf/offres/amundi-etf
+LU2655993207,1rTEWLD,Amundi IS MSCI World Swap ETF EUR Dist,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU2655993207,EWLD,Amundi MSCI World UCITS ETF - EUR (D),Amundi,https://www.home.saxo/-/media/documents/campaigns/amundi/liste-etf-amundi-x-saxo.pdf
+LU3046617802,0CAC,Ossiam Lux - OSSIAM LUX CAC 40 NR UCITS ETF 1C(EUR) (0CAC),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU3046617802,0CAC,OSSIAM CAC 40 NR - UCITS ETF 1,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU3046617802,1rT0CAC,Ossiam Lux-OSSIAM LUX CAC 40NRETF1CEUR,OSSIAM,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU3046617984,MEUR,Ossiam Lux-Ossiam MSCI Europe ETF 1C EUR (MEUR),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU3046617984,MEUR,Ossiam MSCI Europe - UCITS ETF,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU3047998896,GUARD,BNP PARIBAS EASY - Bloomberg Europe Defense - UCITS ETF EUR ACC (GUARD),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU3047998896,GUARD,BNP PARIBAS EASY Bloomberg Eur,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU3047998896,1rTGUARD,BNPP Easy Blmbrg Eurp Def ETF,BNP Paribas Asset Management Luxembourg,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU3078637314,0EMU,Ossiam Lux - OSSIAM MSCI EMU UCITS ETF 1C EUR Accumulation (0EMU),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU3078637314,0EMU,Ossiam MSCI EMU - UCITS ETF 1C,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU3078637314,1rT0EMU,OSSIAM MSCI EMU UCITS ETF 1C EUR Acc,OSSIAM,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU3174346000,OFIEU,Ofi Invest EMU Equity Active UCITS ETF (OFIEU),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU3174346000,OFIEU,OFI INVEST EMU EQUITY ACTIVE U,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU3174346000,1rTOFIEU,Ofi Invest EMU Equity Active ETF,OFI Invest Lux,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU3180074463,INDEP,AMUNDI European Strategic Autonomy - UCITS ETF Acc EUR ACC (INDEP),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU3180074463,INDEP,Amundi European Strategic Auto,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU3180074463,1rTINDEP,Amundi European Strat Autonomy ETF Acc,Amundi Luxembourg S.A.,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU3195985372,IEMID,Indépendance AM Europe Mid UCITS ETF E (C) EUR (IEMID),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU3195985372,IEMID,Indépendance AM Europe Mid UCI,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU3195985372,1rTIEMID,Indépendance AM Europe Mid ETF E  EUR,Indépendance AM,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU3215536486,EUZON,BNP PARIBAS EASY MSCI EMU - UCITS ETF EUR ACC (EUZON),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU3215536486,EUZON,BNP Paribas Easy MSCI EMU UCIT,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU3215536486,1rTEUZON,BNPP EASY MSCI EMU ETF CAP,BNP Paribas Asset Management Luxembourg,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU3215541056,OVNI,BNP Paribas Easy EUR Overnight PEA UCITS ETF EUR Acc (OVNI),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU3215541056,OVNI,BNP Paribas Easy EUR Overnight,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+LU3215541056,1rTOVNI,BNPP E EUR Overnight PEA ETF EUR Acc,BNP Paribas Asset Management Luxembourg,https://www.boursorama.com/bourse/trackers/recherche/?beginnerEtfSearch%5Beligibility%5D%5B0%5D=taxation
+LU3243965608,EXSE,Exane Equity Select Focus Euro - UCITS ETF EUR ACC (EXSE),,https://bourse.fortuneo.fr/api/trackers/search/?page=1&additionalParams=%7B%22pea%22%3A%20%22true%22%7D
+LU3243965608,EXSE,Exane Funds 2 - Exane Equity S,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true
+NO0010257801,OBXD,DNB OBX,,https://www.boursedirect.fr/api/instrument/v3/search?nature=tracker&pea=true

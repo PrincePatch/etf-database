@@ -1,0 +1,25 @@
+isin,ticker,name,issuer,index_tracked,replication,ter,source_url
+LU3047998896,,"BNP PARIBAS EASY BLOOMBERG EUROPE DEFENSE [UCITS ETF, C]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+LU3047998979,,"BNP PARIBAS EASY BLOOMBERG EUROPE DEFENSE [UCITS ETF, D]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+FR0010150458,,"BNP PARIBAS EASY CAC 40® ESG UCITS ETF [CLASSIQUE, D]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+LU1615090864,,"BNP PARIBAS EASY DIVIDEND EUROPE [UCITS ETF, C]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+LU3086268227,,"BNP PARIBAS EASY ESG ENHANCED EMU [UCITS ETF, C]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+LU3215541056,,"BNP PARIBAS EASY EUR OVERNIGHT PEA [UCITS ETF, C]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+FR0012739431,,"BNP PARIBAS EASY EURO STOXX 50 UCITS ETF [EUR C, C]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+FR0012740983,,"BNP PARIBAS EASY EURO STOXX 50 UCITS ETF [EUR C/D, E]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+LU2244387887,,"BNP PARIBAS EASY GROWTH EUROPE [UCITS ETF, C]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+LU1377381717,,"BNP PARIBAS EASY LOW VOL EUROPE [UCITS ETF, C]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+LU1481201025,,"BNP PARIBAS EASY LOW VOL EUROPE [UCITS ETF, D]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+LU1291098827,,"BNP PARIBAS EASY MSCI EMU MIN TE [UCITS ETF, C]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+LU1953137681,,"BNP PARIBAS EASY MSCI EMU SRI PAB [UCITS ETF, C]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+LU3215536486,,"BNP PARIBAS EASY MSCI EMU [UCITS ETF, C]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+LU1377382103,,"BNP PARIBAS EASY QUALITY EUROPE [UCITS ETF, C]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+LU1481201611,,"BNP PARIBAS EASY QUALITY EUROPE [UCITS ETF, D]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+FR0011550185,,"BNP PARIBAS EASY S&P 500 UCITS ETF [EUR C, C]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+FR0013041530,,"BNP PARIBAS EASY S&P 500 UCITS ETF [EUR H, C]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+FR0011550177,,"BNP PARIBAS EASY S&P 500 UCITS ETF [USD C, C]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+FR0011550680,,"BNP PARIBAS EASY S&P 500 UCITS ETF [USD C/D, E]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+FR0011550193,,"BNP PARIBAS EASY STOXX EUROPE 600 UCITS ETF [EUR C, C]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+FR0011550672,,"BNP PARIBAS EASY STOXX EUROPE 600 UCITS ETF [EUR C/D, E]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+LU1377382285,,"BNP PARIBAS EASY VALUE EUROPE [UCITS ETF, C]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false
+LU1481201702,,"BNP PARIBAS EASY VALUE EUROPE [UCITS ETF, D]",BNP Paribas Easy,,,,https://api.bnpparibas-am.com/push/sharesearchv2/PV_FR-FSE/4149?with_first_navs=false

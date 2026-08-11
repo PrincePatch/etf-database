@@ -68,6 +68,35 @@ STRATEGY = [
 # user an ETF is barred from their PEA when we simply do not know.
 ELIGIBILITY = [True, False, None]
 
+# How good the evidence behind a `pea_eligible = True` is. The three best public
+# screeners agree on only 88 of 243 contested ISINs, so publishing a bare boolean
+# would present a coin flip and a prospectus reading as the same fact.
+PEA_CONFIDENCE = [
+    "highest",  # the fund's own prospectus / DIC states PEA eligibility
+    "high",  # the listing venue's flag, or the issuer's own screener
+    "medium",  # two or more independent brokers list it as PEA
+    "low",  # a single broker; queued for human review
+    "hint",  # structurally plausible only -- never sufficient for True
+    "none",
+]
+
+# How the fund qualifies. Worth storing separately because the two mechanisms
+# carry different political risk: a standing Sénat question (QE n° 08783, still
+# unanswered) targets exactly the synthetic route, so if it ever closes, the
+# affected rows must be re-flaggable with one query rather than a re-derivation.
+PEA_MECHANISM = ["physical_eu", "synthetic_swap", "unknown"]
+
+CTO_REASON = [
+    "ucits_eea_with_kid",  # accessible
+    "in_broker_catalogue",  # accessible
+    "no_priips_kid",  # US-domiciled 40-Act funds land here
+    "uk_ucits_is_third_country",
+    "not_passported_to_france",
+    "kid_language_unconfirmed",
+    "not_in_broker_catalogue",
+    "unknown",
+]
+
 
 # --------------------------------------------------------------------------- #
 # funds -- one row per ISIN
@@ -100,10 +129,32 @@ FUNDS = pa.schema(
         pa.field("currency_hedged_to", pa.string()),  # null when unhedged
         pa.field("securities_lending", pa.bool_()),
         # Eligibility for the two French wrappers this database is built around.
+        #
+        # There is no authoritative public register of PEA-eligible funds, and
+        # Décret 2026-189 confirms none is coming: the AMF holds a per-fund
+        # engagement but publishes nothing. So eligibility is assembled from
+        # positive evidence of varying quality, and the quality travels with the
+        # answer instead of being flattened away.
+        #
+        # The asymmetry matters. Holding an ineligible fund in a PEA can force
+        # the plan closed (BOI-RPPM-RCM-40-50-50), losing the tax clock; missing
+        # an eligible one merely means not buying it. A wrong `true` is
+        # therefore far more expensive than a `null`, which is why only the
+        # structural disqualifiers in the classifier may return `false` and
+        # everything else falls back to null.
         pa.field("pea_eligible", pa.bool_()),
-        pa.field("pea_source", pa.string()),  # URL or rule id backing the flag
+        pa.field("pea_confidence", pa.string()),  # see PEA_CONFIDENCE
+        pa.field("pea_mechanism", pa.string()),  # see PEA_MECHANISM
+        pa.field("pea_source", pa.string()),  # URL backing the flag
+        pa.field("pea_as_of", pa.date32()),  # when that source was read
         pa.field("cto_accessible", pa.bool_()),
-        pa.field("cto_note", pa.string()),  # e.g. "US-domiciled, blocked by PRIIPs"
+        pa.field("cto_reason", pa.string()),  # see CTO_REASON
+        pa.field("cto_note", pa.string()),  # free text for the UI
+        # The two facts CTO accessibility decomposes into, kept separately
+        # because they fail for different reasons and are fixed by different
+        # sources.
+        pa.field("has_priips_kid", pa.bool_()),
+        pa.field("authorised_fr", pa.bool_()),  # AMF marketing passport
         pa.field("data_sources", pa.list_(pa.string())),
         pa.field("last_updated", pa.date32()),
     ]
@@ -247,6 +298,28 @@ RETURNS_MONTHLY = pa.schema(
 )
 
 
+# --------------------------------------------------------------------------- #
+# broker_availability -- one row per (broker, ISIN)
+#
+# Separate from funds because catalogue inclusion cannot be derived from any
+# property of the fund. DEGIRO and Trade Republic both diverge from plain venue
+# reachability in ways only their own catalogues reveal, so "this ETF exists and
+# is PEA-eligible" and "you can actually buy it at your broker" are two
+# questions, and the second one is per-broker fact, not inference.
+# --------------------------------------------------------------------------- #
+
+BROKER_AVAILABILITY = pa.schema(
+    [
+        pa.field("broker", pa.string(), nullable=False),
+        pa.field("isin", pa.string(), nullable=False),
+        pa.field("available", pa.bool_()),
+        pa.field("wrapper", pa.string()),  # "pea", "cto", or "both"
+        pa.field("source_url", pa.string()),
+        pa.field("as_of", pa.date32()),
+    ]
+)
+
+
 TABLES = {
     "funds": FUNDS,
     "listings": LISTINGS,
@@ -254,6 +327,7 @@ TABLES = {
     "performance": PERFORMANCE,
     "returns_yearly": RETURNS_YEARLY,
     "returns_monthly": RETURNS_MONTHLY,
+    "broker_availability": BROKER_AVAILABILITY,
 }
 
 
