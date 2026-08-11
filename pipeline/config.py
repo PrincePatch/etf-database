@@ -35,12 +35,26 @@ BENCHMARK_ISIN = "IE00B4L5Y983"  # iShares Core MSCI World UCITS ETF (acc)
 # computed, so the UI can say "not enough history" instead of showing noise.
 MIN_HISTORY_DAYS = 30
 
-# Politeness / throttling for the public endpoints the sources hit.
+# Politeness / throttling for the public endpoints the sources hit. Identifying
+# the pipeline honestly is the default: an operator who wants to block it, or ask
+# us to slow down, should be able to tell who we are from their logs.
 HTTP_TIMEOUT = 30
 HTTP_RETRIES = 4
 USER_AGENT = (
     "etf-database/0.1 (+https://github.com/PrincePatch/etf-database) "
     "open-data pipeline"
+)
+
+# One documented exception: pipeline/prices.py sends a browser user agent.
+# Yahoo's chart endpoint rejects any non-browser UA with 429 regardless of
+# request volume -- it is a client check, not a rate limit -- so an honest UA
+# returns no data at all rather than less data. We compensate where it actually
+# matters: concurrency is capped at the measured optimum instead of pushed
+# higher, the incremental path is the default, and responses are cached. Every
+# other source in the pipeline uses USER_AGENT above.
+BROWSER_USER_AGENT_JUSTIFICATION = (
+    "Yahoo returns 429 for non-browser user agents irrespective of volume; "
+    "see reference/PRICE_SOURCES.md section 1.1 for the measurements."
 )
 
 # Optional, free-tier key that widens ISIN -> ticker resolution. The pipeline
