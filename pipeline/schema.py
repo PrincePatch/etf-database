@@ -104,6 +104,16 @@ CTO_REASON = [
 
 FUNDS = pa.schema(
     [
+        # Usually an ISO 6166 ISIN, but not always. Around 58% of US-listed ETFs
+        # cannot be given one: the ISIN is derived from the CUSIP, and CUSIP is a
+        # paid licence. Those rows carry the surrogate `US:{exchange}:{ticker}`
+        # in this column instead -- a 12-character ISIN can never contain a
+        # colon, so the two shapes cannot be confused for one another.
+        #
+        # The alternative was to synthesise ISINs, which would silently merge
+        # distinct funds into one row, or to drop the funds entirely, which
+        # would delete about 3,250 of them. Consumers that need a real ISIN
+        # should test the shape rather than assume it.
         pa.field("isin", pa.string(), nullable=False),
         pa.field("name", pa.string()),
         pa.field("short_name", pa.string()),
