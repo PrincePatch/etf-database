@@ -22,27 +22,32 @@ schedule. The pipeline runs end to end.
 
 | | |
 | --- | --- |
-| Funds | 12,366 |
-| Listings | 25,250 |
+| Funds | 11,296 |
+| Listings | 24,428 |
 | Funds with price history | 11,195 |
 | Weekly index points | 3.3 M across 10,938 series |
-| PEA: established / excluded / undetermined | 253 / 6,507 / 5,606 |
+| PEA: established / excluded / undetermined | 251 / 6,227 / 4,818 |
 | Published payload | 26 MB |
 
 Everything from the schema through the scheduled refresh is built and tested.
 What is not finished is *coverage*, and it is worth being specific about where
 the holes are rather than letting the totals imply completeness:
 
-- **PEA eligibility is thin by construction** — 253 funds established against
-  5,606 undetermined. See below; the fix is more first-party sources, not looser
+- **PEA eligibility is thin by construction** — 251 funds established against
+  4,818 undetermined. See below; the fix is more first-party sources, not looser
   rules.
-- **~1,070 rows are not exchange-traded at all.** Danish
-  investeringsforeninger and similar open-ended funds are filed under the same
-  CFI collective-investment class as ETFs, so they arrive through the regulatory
-  feed and carry no ticker on any venue. They are being filtered out.
-- **Asset class is unreliable for part of the universe.** ISO 10962 CFI
-  character 5 is self-reported loosely by issuers, so a number of plain equity
-  ETFs are filed as "mixed". Being reclassified.
+- **3,543 funds have no asset class.** Mostly single-stock leveraged products
+  named after a ticker rather than an asset (`Tradr 2X Long UPST`), plus names
+  the source truncated before the deciding word. The classifier leaves these
+  null rather than guessing, since a wrong class silently returns the wrong set
+  to anyone filtering on it.
+- **101 funds have no price history**, generally because no venue we know of
+  publishes a symbol we can resolve.
+- **Two PEA-eligible ETFs were dropped as untradable** — an Amundi inverse
+  EuroStoxx 50 and a BNP ESG Eurozone share class. Both are real funds; we
+  simply have one listing each, with no ticker and no price bar, so nothing
+  could be shown about them. Listing coverage, not the rule, is what is
+  missing.
 - **Only Chromium has been tested.** Firefox and Safari are unverified.
 
 ## The PEA question
