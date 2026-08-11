@@ -70,9 +70,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import duckdb
+import pandas as pd
 import pyarrow.parquet as pq
 
-from . import fx
+from . import adjust, fx
+from . import prices as prices_store
 from .config import BASE_CURRENCY, DOCS_DATA, PROCESSED
 
 # The published index is weekly. Anything finer starts to look like the feed it
@@ -218,16 +220,18 @@ def build_index(con: duckdb.DuckDBPyConnection) -> int:
 
     `adj_close` is the input because it is the pipeline's own reconstructed
     total-return series, rebuilt from raw bars and the corporate-actions table --
-    never the upstream vendor's adjusted column.
+    never the upstream vendor's adjusted column. It does not exist on disk: the
+    store is deliberately raw and append-only, because one new dividend restates
+    the adjusted series all the way back to inception, so it is derived here.
     """
-    prices = _relation(con, "prices")
+    _build_adjusted(con)
 
     con.execute(f"""
         CREATE OR REPLACE TEMP TABLE _weekly AS
         SELECT isin, date, adj_close, currency FROM (
             SELECT isin, date, adj_close, coalesce(currency, '{BASE_CURRENCY}') AS currency,
                    row_number() OVER (PARTITION BY isin, date_trunc('week', date) ORDER BY date DESC) AS rn
-            FROM {prices}
+            FROM _adjusted
             WHERE adj_close IS NOT NULL AND adj_close > 0
         ) WHERE rn = 1
     """)
@@ -274,6 +278,60 @@ def build_index(con: duckdb.DuckDBPyConnection) -> int:
         FROM _tr_index GROUP BY isin
     """)
     return con.sql("SELECT count(*) FROM _tr_index").fetchone()[0]
+
+
+def _build_adjusted(con: duckdb.DuckDBPyConnection) -> None:
+    """Materialise `_adjusted` (isin, date, adj_close, currency) from raw bars.
+
+    The price store keeps `adj_close` null on purpose -- see the module docstring
+    of pipeline/prices.py -- so the total-return series is reconstructed on the
+    way out, from the raw closes and the corporate-actions table.
+
+    One bucket at a time, which is exact rather than a memory-saving
+    approximation: the store shards on the fund key, so a fund's entire history
+    lives in exactly one bucket and no adjustment ever spans two. Peak memory is
+    one bucket, tens of MB, instead of the whole panel.
+    """
+    actions_file = PROCESSED / "corporate_actions.parquet"
+    actions = pd.read_parquet(actions_file) if actions_file.exists() else None
+    if actions is None or actions.empty:
+        # Refuse rather than publish price returns labelled as total returns. On
+        # a distributing ETF the two differ by several points a year, and the
+        # column name would assert something false about every one of them.
+        raise FileNotFoundError(
+            f"{actions_file} is missing or empty; refusing to publish a "
+            "total-return index reconstructed without dividends"
+        )
+
+    con.execute(
+        "CREATE OR REPLACE TEMP TABLE _adjusted "
+        "(isin VARCHAR, date DATE, adj_close DOUBLE, currency VARCHAR)"
+    )
+
+    # The part files, not their directories: read_prices() treats a directory as
+    # the store root and globs `bucket=*/part.parquet` beneath it, so handing it
+    # one bucket would have it look for buckets inside a bucket and find nothing.
+    parts = sorted((PROCESSED / "prices").glob("bucket=*/part.parquet"))
+    if not parts:
+        single = PROCESSED / "prices.parquet"
+        parts = [single] if single.exists() else []
+    if not parts:
+        raise FileNotFoundError(
+            f"no price bars under {PROCESSED / 'prices'}; run `python -m pipeline.build` first"
+        )
+
+    for part in parts:
+        bars = prices_store.read_prices(
+            part, columns=["isin", "date", "close", "currency"]
+        )
+        if bars.empty:
+            continue
+        bars["adj_close"] = pd.NA
+        adjusted = adjust.apply_adjustment(bars, actions)
+        frame = adjusted[["isin", "date", "adj_close", "currency"]]
+        con.register("_bucket", frame)
+        con.execute("INSERT INTO _adjusted SELECT isin, date::DATE, adj_close, currency FROM _bucket")
+        con.unregister("_bucket")
 
 
 def export_index(con: duckdb.DuckDBPyConnection, out_dir: Path) -> int:

@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-11T08:53:04+00:00",
-  "as_of": "2026-08-10",
-  "synthetic": true,
+  "generated_at": "2026-08-11T15:29:07+00:00",
+  "as_of": "2026-08-11",
+  "synthetic": false,
   "counts": {
-    "funds": 13000,
-    "listings": 28517,
-    "returns_yearly": 108124,
-    "returns_monthly": 1160797,
-    "broker_availability": 43625,
-    "tr_index": 5055816
+    "funds": 12366,
+    "listings": 25250,
+    "returns_yearly": 73884,
+    "returns_monthly": 781206,
+    "broker_availability": 551,
+    "tr_index": 3287693
   },
   "tr_index": {
     "file": "tr_index.parquet",
