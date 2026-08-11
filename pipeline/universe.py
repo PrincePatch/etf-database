@@ -92,6 +92,7 @@ import inspect
 import io
 import json
 import logging
+import re
 import time
 from dataclasses import dataclass, field
 from hashlib import blake2b
@@ -1040,7 +1041,57 @@ def _merge_funds(
     for name, count in provenance.loc[provenance["contenders"] > 1, "field"].value_counts().items():
         report.contested_fields[str(name)] = int(count)
 
-    return to_frame(pd.DataFrame(columns), "funds"), provenance.reset_index(drop=True)
+    merged = pd.DataFrame(columns)
+    if "name" in merged.columns:
+        merged["name"] = clean_fund_name(merged["name"])
+
+    return to_frame(merged, "funds"), provenance.reset_index(drop=True)
+
+
+# "ohne Nennwert" -- no par value. A German filing attribute, never part of a
+# fund's name, and it reaches us on several hundred Frankfurt and Xetra rows.
+_PAR_VALUE_TAIL = re.compile(r"\s+o\.?\s?N\.?\s*$", re.IGNORECASE)
+
+# FIRDS appends its own "ETFS" class marker to an already-assembled long name,
+# on 4,525 rows. Trailing, it is always the marker: ETF Securities was a real
+# issuer, but its brand leads a name ("ETFS Physical Gold") and never trails it.
+# It also has to be stripped independently of the rule below, because the marker
+# is appended *after* the source truncates the name at 30 characters -- "Vanguard
+# Total International Stock ETF" arrives as "Vanguard Total International S ETFS",
+# with the designation it would otherwise duplicate cut off mid-word.
+_CLASS_MARKER_TAIL = re.compile(r"\s+ETFS\s*$", re.IGNORECASE)
+
+# A genuinely duplicated designation: "... ETF ETF". Only the second token goes.
+# Stripping both would turn "iShares Core S&P 500 ETF" into "iShares Core S&P
+# 500", a different claim about what the instrument is.
+_DOUBLED_TYPE_TAIL = re.compile(
+    r"(?<=\b(?:ETF|ETP|ETC|ETN))\s+(?:ETF|ETP|ETC|ETN)\s*$", re.IGNORECASE
+)
+
+
+def clean_fund_name(names: pd.Series) -> pd.Series:
+    """Strip filing artefacts from fund names without touching real ones.
+
+    Conservative by construction, because a name is what a user searches by:
+    only a trailing token is ever removed, and only when it is provably an
+    artefact rather than part of the name.
+
+    - "iShares Core S&P 500 ETF ETFS" -> "iShares Core S&P 500 ETF"; the
+      duplicate goes, the designation stays.
+    - "WisdomTree Physical Gold ETC" is untouched -- a single type suffix is the
+      product's actual designation, not a repetition.
+    - "ETFS Physical Gold" is untouched -- ETF Securities was a real issuer, and
+      the token is leading rather than trailing.
+    - "iShares Core DAX UCITS ETF DE o.N." loses only the par-value marker.
+
+    Applied at the merge so every consumer sees one name, rather than in the site
+    where it would be a display trick over data that stayed untidy.
+    """
+    cleaned = names.astype("string").str.strip()
+    cleaned = cleaned.str.replace(_PAR_VALUE_TAIL, "", regex=True).str.strip()
+    cleaned = cleaned.str.replace(_CLASS_MARKER_TAIL, "", regex=True).str.strip()
+    cleaned = cleaned.str.replace(_DOUBLED_TYPE_TAIL, "", regex=True).str.strip()
+    return cleaned.str.replace(r"\s{2,}", " ", regex=True).str.strip()
 
 
 def _merge_listings(

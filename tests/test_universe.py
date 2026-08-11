@@ -962,3 +962,49 @@ def test_alias_map_still_matches_the_published_iso_10383_register():
     assert live.alias_problems(reserved) == []
     for mic in ADAPTER_MIC_TABLES["openfigi"] | ADAPTER_MIC_TABLES["euronext"]:
         assert live.knows(mic), f"{mic} is no longer in the register"
+
+
+# --------------------------------------------------------------------------- #
+# Fund name artefacts
+# --------------------------------------------------------------------------- #
+
+
+@pytest.mark.parametrize(
+    ("raw", "expected"),
+    [
+        # The artefact: FIRDS stores an assembled long name, so 4,525 rows arrive
+        # with the product type twice over.
+        ("iShares Core S&P 500 ETF ETFS", "iShares Core S&P 500 ETF"),
+        ("Vanguard Total Bond Market ETF ETFS", "Vanguard Total Bond Market ETF"),
+        ("Global X ETF ETF", "Global X ETF"),
+        # The marker is appended after the source truncates at 30 characters,
+        # so the designation it duplicates is often cut off mid-word and there
+        # is nothing preceding it to key on.
+        ("Vanguard Total International S ETFS", "Vanguard Total International S"),
+        ("Invesco QQQ Trust Series 1 ETFS", "Invesco QQQ Trust Series 1"),
+        # German filings carry "ohne Nennwert" -- no par value -- which is an
+        # attribute of the listing, never part of the name.
+        ("iShares Core DAX UCITS ETF DE o.N.", "iShares Core DAX UCITS ETF DE"),
+        ("Xtrackers DAX UCITS ETF 1C oN", "Xtrackers DAX UCITS ETF 1C"),
+        # The traps. A single type suffix is the product's designation, not a
+        # repetition, and removing it would assert something different about what
+        # the instrument is.
+        ("WisdomTree Physical Gold ETC", "WisdomTree Physical Gold ETC"),
+        ("21Shares Bitcoin ETP", "21Shares Bitcoin ETP"),
+        ("Amundi MSCI World UCITS ETF Acc", "Amundi MSCI World UCITS ETF Acc"),
+        # ETF Securities was a real issuer; leading is not trailing.
+        ("ETFS Physical Gold", "ETFS Physical Gold"),
+        # A name that is only a suffix is a bad name, not an empty one.
+        ("ETF", "ETF"),
+        ("  Amundi   MSCI  World ETF ETFS ", "Amundi MSCI World ETF"),
+    ],
+)
+def test_clean_fund_name(raw, expected):
+    assert universe.clean_fund_name(pd.Series([raw])).iloc[0] == expected
+
+
+def test_clean_fund_name_preserves_missing():
+    """A missing name stays missing rather than becoming an empty string."""
+    out = universe.clean_fund_name(pd.Series([None, "iShares Core MSCI World ETF ETFS"]))
+    assert pd.isna(out.iloc[0])
+    assert out.iloc[1] == "iShares Core MSCI World ETF"
