@@ -1,0 +1,89 @@
+name: Refresh dataset
+
+# The universe changes slowly -- FIRDS publishes weekly, venues add a handful of
+# funds a month -- while prices change every trading day. Running both on the
+# price cadence would re-download hundreds of megabytes of reference data daily
+# to learn nothing, so the schedule follows the data.
+on:
+  schedule:
+    # Tuesday to Friday: prices only.
+    - cron: '30 21 * * 2-5'
+    # Monday also re-merges the universe. FIRDS publishes on Saturdays, so
+    # Monday evening is the first run that can see a new file.
+    - cron: '30 21 * * 1'
+  workflow_dispatch:
+    inputs:
+      full_universe:
+        description: 'Re-merge the universe from every source (slow)'
+        type: boolean
+        default: false
+      full_prices:
+        description: 'Cold backfill instead of incremental refresh (~2 GB)'
+        type: boolean
+        default: false
+
+concurrency:
+  # A refresh that overlaps its predecessor would have two processes appending
+  # to the same store. Queue instead, and never cancel a run mid-write.
+  group: refresh
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - run: python -m pip install -r requirements.txt
+
+      # The raw cache is what makes an incremental run cheap: without it every
+      # run is a cold backfill. Keyed by day so it rolls forward, with a prefix
+      # restore so a new key still starts from yesterday's data.
+      - name: Restore source cache
+        uses: actions/cache@v4
+        with:
+          path: data/raw
+          key: raw-${{ github.run_id }}
+          restore-keys: raw-
+
+      - name: Refresh the universe
+        if: github.event.schedule == '30 21 * * 1' || github.event.inputs.full_universe == 'true'
+        run: python -m pipeline.build --only universe,eligibility --no-progress
+
+      - name: Refresh prices and statistics
+        run: |
+          python -m pipeline.build \
+            --skip universe,eligibility \
+            ${{ github.event.inputs.full_prices == 'true' && '--full-prices' || '' }} \
+            --no-progress
+
+      - name: Export the published dataset
+        run: python -m pipeline.export
+
+      # Fail loudly rather than publish a broken dataset. An export that lost
+      # most of its rows, or that leaked a raw price column, must not reach the
+      # site -- a silently wrong dataset is worse than a stale one.
+      - name: Verify the export
+        run: python -m tools.verify_export
+
+      - name: Commit the refreshed dataset
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/processed docs/data
+          if git diff --cached --quiet; then
+            echo "No change in the published dataset."
+            exit 0
+          fi
+          git commit -m "Refresh dataset ($(date -u +%Y-%m-%d))"
+          git push
