@@ -17,20 +17,33 @@ different from a generic ETF screener:
 
 ## Status
 
-Under construction. The data pipeline is being assembled module by module; no
-published dataset yet.
+Live at **https://princepatch.github.io/etf-database/**, refreshed on a
+schedule. The pipeline runs end to end.
 
-| Component | State |
+| | |
 | --- | --- |
-| Canonical schema | done |
-| EUR conversion (ECB reference rates) | done |
-| Performance statistics engine | done |
-| PEA / CTO classifier | done |
-| Source adapters (EU venues, US, enrichment) | in progress |
-| Price ingestion and total-return reconstruction | in progress |
-| Universe merge and deduplication | not started |
-| Web interface | not started |
-| Scheduled refresh | not started |
+| Funds | 12,366 |
+| Listings | 25,250 |
+| Funds with price history | 11,195 |
+| Weekly index points | 3.3 M across 10,938 series |
+| PEA: established / excluded / undetermined | 253 / 6,507 / 5,606 |
+| Published payload | 26 MB |
+
+Everything from the schema through the scheduled refresh is built and tested.
+What is not finished is *coverage*, and it is worth being specific about where
+the holes are rather than letting the totals imply completeness:
+
+- **PEA eligibility is thin by construction** — 253 funds established against
+  5,606 undetermined. See below; the fix is more first-party sources, not looser
+  rules.
+- **~1,070 rows are not exchange-traded at all.** Danish
+  investeringsforeninger and similar open-ended funds are filed under the same
+  CFI collective-investment class as ETFs, so they arrive through the regulatory
+  feed and carry no ticker on any venue. They are being filtered out.
+- **Asset class is unreliable for part of the universe.** ISO 10962 CFI
+  character 5 is self-reported loosely by issuers, so a number of plain equity
+  ETFs are filed as "mixed". Being reclassified.
+- **Only Chromium has been tested.** Firefox and Safari are unverified.
 
 ## The PEA question
 
