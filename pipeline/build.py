@@ -186,6 +186,7 @@ class BuildReport:
     aum_nulled: int = 0
     funds_total: int = 0
     funds_with_symbol: int = 0
+    listings_with_symbol: int = 0
     funds_with_prices: int = 0
     funds_without_prices: int = 0
     pea: dict[str, int] = field(default_factory=dict)
@@ -265,6 +266,7 @@ class BuildReport:
         add("-" * 60)
         add(f"  funds                                   {self.funds_total:>10,}")
         add(f"  with a resolvable price symbol          {self.funds_with_symbol:>10,}")
+        add(f"  listings stamped with a Yahoo symbol    {self.listings_with_symbol:>10,}")
         add(f"  with price history                      {self.funds_with_prices:>10,}")
         add(f"  WITHOUT price history                   {self.funds_without_prices:>10,}")
         if self.unsupported_currencies:
@@ -422,13 +424,30 @@ def stage_resolve(cfg: BuildConfig, state: BuildState, report: BuildReport) -> N
     candidates = universe.yahoo_candidates(listings)
     state.symbols = candidates[candidates["isin"].isin(set(funds["isin"]))].reset_index(drop=True)
 
+    # Persist the resolved symbols onto the listings themselves. They were being
+    # derived here and thrown away, leaving `listings.yahoo_ticker` null for
+    # every row in the published table even though 11,195 funds had prices
+    # fetched through those very symbols -- a column the schema declares and
+    # nothing filled. Joining on (isin, MIC) rather than ISIN alone matters: one
+    # fund has a different symbol on each venue, and ISIN alone would smear one
+    # venue's ticker across all of them.
+    resolved = candidates[["isin", "exchange_mic", "yahoo_ticker"]].drop_duplicates(
+        subset=["isin", "exchange_mic"]
+    )
+    merged = listings.drop(columns=["yahoo_ticker"]).merge(
+        resolved, on=["isin", "exchange_mic"], how="left"
+    )
+    state.listings = merged.reindex(columns=listings.columns)
+    report.listings_with_symbol = int(state.listings["yahoo_ticker"].notna().sum())
+
     report.funds_total = int(len(funds))
     report.funds_with_symbol = int(state.symbols["isin"].nunique())
     log.info(
-        "resolve: %d/%d funds have at least one price symbol (%d candidates)",
+        "resolve: %d/%d funds have at least one price symbol (%d candidates, %d listings stamped)",
         report.funds_with_symbol,
         report.funds_total,
         len(state.symbols),
+        report.listings_with_symbol,
     )
 
 
