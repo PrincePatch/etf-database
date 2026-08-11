@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fiche ETF — base ETF PEA · CTO</title>
+<meta name="description" content="Fiche détaillée d’un ETF : performance en euros, risque, rendements par année et par mois, cotations, et éligibilité PEA / CTO avec ses preuves.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231b3f8f'/%3E%3Cpath d='M6 23 L13 14 L19 19 L26 8' stroke='%23fff' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preload" href="./vendor/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./vendor/uplot/uPlot.min.css">
+<link rel="stylesheet" href="./style.css">
+<script>
+  try { var t = localStorage.getItem('etfdb-theme'); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#fiche">Aller à la fiche</a>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="wordmark" href="./index.html">Base ETF<span class="tag">PEA · CTO</span></a>
+    <nav aria-label="Navigation principale">
+      <a href="./index.html">Screener</a>
+      <a href="./index.html#methode">Méthode</a>
+      <a href="https://github.com/PrincePatch/etf-database" rel="noopener">Code source</a>
+    </nav>
+    <span class="spacer"></span>
+    <p class="engine" id="engine" data-state="boot" role="status">démarrage du moteur…</p>
+    <fieldset class="themeswitch">
+      <legend class="sr-only">Thème de l’interface</legend>
+      <input type="radio" name="theme" id="th-auto" value="auto" class="sr-only" checked>
+      <label for="th-auto" title="Thème automatique (système)"><span class="sr-only">Automatique</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v18"/><path d="M12 3a9 9 0 0 1 0 18" fill="currentColor" stroke="none"/></svg></label>
+      <input type="radio" name="theme" id="th-light" value="light" class="sr-only">
+      <label for="th-light" title="Thème clair"><span class="sr-only">Clair</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg></label>
+      <input type="radio" name="theme" id="th-dark" value="dark" class="sr-only">
+      <label for="th-dark" title="Thème sombre"><span class="sr-only">Sombre</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg></label>
+    </fieldset>
+  </div>
+  <div class="progress" id="progress" data-state="boot"></div>
+</header>
+
+<main class="page" id="fiche">
+  <p style="margin:0 0 1rem"><a href="./index.html">← Retour au screener</a></p>
+  <div id="content">
+    <p class="muted" id="loading">Chargement de la fiche…</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p><strong>Ces indicateurs ne remplacent pas la lecture du prospectus.</strong> L’éligibilité au PEA peut cesser
+    silencieusement entre deux rapports semestriels ; détenir un titre inéligible dans un PEA peut entraîner la
+    clôture du plan. Vérifiez avant d’acheter. Ceci n’est pas un conseil en investissement.</p>
+  <h2 style="font-size:1rem;margin-top:1.2rem">Données et sources</h2>
+  <p><strong>Ce site publie des statistiques qu’il a calculées, pas des données de marché redistribuées.</strong>
+    Les cotations brutes servent au calcul et ne sont pas republiées. Le seul historique publié est un indice
+    hebdomadaire de performance totale en euros, ramené à 100 à la première observation du fonds, reconstruit à
+    partir des cours et des distributions et converti aux taux de référence de la BCE.
+    <a href="./index.html#methode">Méthode complète</a>.</p>
+  <p class="faint" id="footer-meta"></p>
+</footer>
+
+<script src="./vendor/uplot/uPlot.iife.min.js"></script>
+<script type="module" src="./fund.js"></script>
+</body>
+</html>

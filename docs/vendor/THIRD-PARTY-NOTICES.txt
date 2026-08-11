@@ -1,0 +1,25 @@
+Third-party assets vendored into this directory.
+
+Nothing here is loaded from a CDN: the site must work from a cold cache with no
+third-party request, and a public dataset should not leak its readers to another
+host. Only the single-threaded DuckDB build is kept -- the multi-threaded one
+needs COOP/COEP response headers that GitHub Pages cannot set, so shipping its
+35 MB would be dead weight.
+
+-------------------------------------------------------------------------------
+duckdb/  -- @duckdb/duckdb-wasm 1.33.1-dev57.0, MIT
+           https://github.com/duckdb/duckdb-wasm
+           duckdb-bundle.mjs is the esbuild output of
+           `export * from '@duckdb/duckdb-wasm'`, because the published
+           dist/duckdb-browser.mjs has a bare import of "apache-arrow" that a
+           plain <script type="module"> cannot resolve. It therefore also
+           contains Apache Arrow 21.2.0, Apache-2.0.
+
+uplot/   -- uPlot 1.6.32, MIT, Copyright (c) 2022 Leon Sorokin
+           https://github.com/leeoniya/uPlot
+
+fonts/   -- IBM Plex Sans, SIL Open Font License 1.1, Copyright (c) 2017 IBM Corp.
+           https://github.com/IBM/plex
+        -- Spectral, SIL Open Font License 1.1, Copyright (c) 2017 Production Type
+           https://github.com/productiontype/Spectral
+           Latin subsets only, as served by Google Fonts.
