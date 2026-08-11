@@ -1,0 +1,20 @@
+Nasdaq Traded|Symbol|Security Name|Listing Exchange|Market Category|ETF|Round Lot Size|Test Issue|Financial Status|CQS Symbol|NASDAQ Symbol|NextShares
+Y|A|Agilent Technologies, Inc. Common Stock|N| |N|100|N||A|A|N
+Y|AA|Alcoa Corporation Common Stock |N| |N|100|N||AA|AA|N
+Y|ZYME|Zymeworks Inc. - Common Stock|Q|Q|N|100|N|N||ZYME|N
+Y|AAA|Alternative Access First Priority CLO Bond ETF|P| |Y|100|N||AAA|AAA|N
+Y|AAAC|Columbia AAA CLO ETF|P| |Y|100|N||AAAC|AAAC|N
+Y|AAAD|PGIM AAA CLO Aggregate Duration ETF|P| |Y|100|N||AAAD|AAAD|N
+Y|AAAA|Amplius Aggressive Asset Allocation ETF|Z| |Y|100|N||AAAA|AAAA|N
+Y|AAAU|Goldman Sachs Physical Gold ETF Shares|Z| |Y|100|N||AAAU|AAAU|N
+Y|AAOG|Leverage Shares 2X Long AAOI Daily ETF|Z| |Y|100|N||AAOG|AAOG|N
+Y|AAAP|Pacer Barings CLO Market Flex ETF|Q|G|Y|100|N|N||AAAP|N
+Y|AADR|AdvisorShares Dorsey Wright ADR ETF|Q|G|Y|100|N|N||AADR|N
+Y|AAEQ|Alpha Architect US Equity 2 ETF|Q|G|Y|100|N|N||AAEQ|N
+Y|ACLO|TCW AAA CLO ETF|N| |Y|100|N||ACLO|ACLO|N
+Y|AKAF|The Frontier Economic Fund|N| |Y|100|N||AKAF|AKAF|N
+Y|BCEM|Baron Emerging Markets Select ETF|N| |Y|100|N||BCEM|BCEM|N
+Y|ZTEST|Tick Pilot Test ETF|P| |Y|100|Y||ZTEST|ZTEST|N
+Y|XXETF|Unknown Venue ETF|K| |Y|100|N||XXETF|XXETF|N
+Y|BROKEN|Truncated row
+File Creation Time: 0810202615:42|||||

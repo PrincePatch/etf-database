@@ -1,0 +1,11 @@
+﻿"Instrument Fullname";"ESG Classification";Name;ISIN;Symbol;Market;Currency;"Open Price";"High Price";"low Price";"last Price";"last Trade MIC Time";"Time Zone";Volume;Turnover;"Closing Price";"Closing Price DateTime"
+"European Trackers"
+"10 Aug 2026"
+"All datapoints provided as of end of last active trading day."
+"iShares Core MSCI World UCITS ETF USD (Acc)";"-";"Core MSCI World";IE00B4L5Y983;IWDA;"Euronext Amsterdam";EUR;107.2;107.9;107.1;107.6;" 17:35";CET;120000;12900000.00;107.4;
+"iShares Core MSCI World UCITS ETF USD (Acc)";"-";"Core MSCI World";IE00B4L5Y983;IWDA;"Euronext Amsterdam - Multi-currency Trading";USD;124.6;125.1;124.4;124.9;" 17:35";CET;5000;624500.00;124.7;
+"Amundi MSCI Europe UCITS ETF Dist";"ESG ETF art. 8";"AMUNDI MSCI EUROPE";FR0010315770;CEU;"Euronext Paris";EUR;31.2;31.4;31.1;31.3;" 17:35";CET;42000;1314600.00;31.2;
+"BNP Paribas Easy EUR Corp Bond SRI UCITS ETF";"ESG ETF art. 9";"BNPP EASY EUR CORP";LU2533812058;EEUC;"Euronext Amsterdam, Paris";EUR;10.1;10.2;10.1;10.2;" 17:35";CET;900;9180.00;10.1;
+"21Shares Bitcoin Core ETP";"-";"21S BITCOIN CORE";CH1199067674;CBTC;"ETF Plus";EUR;11.3;11.5;11.2;11.4;" 17:35";CET;300;3420.00;11.3;
+"Broken Check Digit UCITS ETF";"-";"BROKEN CHECK";IE00B4L5Y984;BRK;"Euronext Paris";EUR;1.0;1.0;1.0;1.0;" 17:35";CET;0;0.00;1.0;
+"Listed Somewhere Unknown ETP";"-";"UNKNOWN VENUE";XS2337085422;SDIS;"Bolsa de Madrid";EUR;5.1;5.2;5.1;5.1;" 17:35";CET;0;0.00;5.1;

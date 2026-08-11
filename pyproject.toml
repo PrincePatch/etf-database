@@ -1,0 +1,19 @@
+[project]
+name = "etf-database"
+version = "0.1.0"
+description = "Open database of worldwide ETFs with performance stats and French PEA/CTO eligibility"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = [
+    # Tests that hit a live upstream. They skip rather than fail when offline,
+    # so a network outage never looks like a code regression -- but they run in
+    # CI, because an endpoint that has rotated its URL is exactly the failure
+    # this project needs to hear about early.
+    "network: requires internet access to a live data source",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning:yfinance.*",
+]

@@ -1,0 +1,6 @@
+ISIN;ValorSymbol;ShortName;FundLongName;IssuerNameFull;TradingCurrency;FundCurrency;ManagementFee;MarketCode;ListingSegmentDesc
+CH0008899764;CSSMI;iSh SMI (CH) CHF D;iShares SMI ETF (CH);BlackRock Asset Management Schweiz AG;CHF;CHF;0.35;XSWX;Collective Investment Schemes Standard
+IE00B4L5Y983;SWDA;iSh Cor MSCI Wld USD A;iShares Core MSCI World UCITS ETF (Acc);iShares III plc;USD;USD;0.2;XSWX;Collective Investment Schemes Standard
+IE00B4L5Y983;SWDAC;iSh Cor MSCI Wld CHF A;iShares Core MSCI World UCITS ETF (Acc);iShares III plc;CHF;USD;0.2;XSWX;Collective Investment Schemes Standard
+LU2533812058;BNPCB;BNPP EASY EUR Corp;BNP Paribas Easy EUR Corp Bond SRI UCITS ETF;BNP Paribas Asset Management Luxembourg;EUR;EUR;0.12;XSWX;Collective Investment Schemes Standard
+IE00B4L5Y984;BRKN;Broken Check Digit;Broken Check Digit UCITS ETF;Zürcher Vermögensverwaltung AG;CHF;CHF;0.99;XSWX;Collective Investment Schemes Standard

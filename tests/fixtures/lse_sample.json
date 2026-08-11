@@ -1,0 +1,89 @@
+[
+ {
+  "id": "block_content:9524a5dd-7053-4f7a-ac75-71d12db796b4",
+  "type": "price-explorer",
+  "meta": {
+   "title": "Price explorer"
+  },
+  "content": [
+   {
+    "name": "priceexplorersearch",
+    "type": "DATATYPE",
+    "value": {
+     "totalElements": 6,
+     "totalPages": 1,
+     "size": 1000,
+     "number": 0,
+     "content": [
+      {
+       "issuername": "21SHARES AG",
+       "issuercode": "21SH",
+       "name": "21SHARES BITCOIN CORE ETP",
+       "tidm": "CBTC",
+       "isin": "CH1199067674",
+       "currency": "GBX",
+       "category": "ETFS",
+       "lastprice": 1132.75,
+       "marketcapitalization": null
+      },
+      {
+       "issuername": "21SHARES AG",
+       "issuercode": "21SH",
+       "name": "21SHARES BITCOIN CORE ETP",
+       "tidm": "CBTU",
+       "isin": "CH1199067674",
+       "currency": "USD",
+       "category": "ETFS",
+       "lastprice": 16.06,
+       "marketcapitalization": null
+      },
+      {
+       "issuername": "ISHARES III PLC",
+       "issuercode": "ISH3",
+       "name": "ISHARES CORE MSCI WORLD UCITS ETF",
+       "tidm": "SWDA",
+       "isin": "IE00B4L5Y983",
+       "currency": "GBp",
+       "category": "ETFS",
+       "lastprice": 8450.0,
+       "marketcapitalization": null
+      },
+      {
+       "issuername": "ISHARES PLC",
+       "issuercode": "ISHA",
+       "name": "ISHARES CORE S&P 500 UCITS ETF",
+       "tidm": "IUSA",
+       "isin": "IE0031442068",
+       "currency": "GBX",
+       "category": "ETFS",
+       "lastprice": 4210.5,
+       "marketcapitalization": null
+      },
+      {
+       "issuername": "AMUNDI",
+       "issuercode": "AMUN",
+       "name": "AMUNDI MSCI EUROPE UCITS ETF",
+       "tidm": "CEUD",
+       "isin": "FR0010315770",
+       "currency": "EUR",
+       "category": "ETFS",
+       "lastprice": 31.3,
+       "marketcapitalization": null
+      },
+      {
+       "issuername": "BROKEN PLC",
+       "issuercode": "BRKN",
+       "name": "BROKEN CHECK DIGIT UCITS ETF",
+       "tidm": "BRK",
+       "isin": "IE00B4L5Y984",
+       "currency": "GBX",
+       "category": "ETFS",
+       "lastprice": 100.0,
+       "marketcapitalization": null
+      }
+     ]
+    }
+   }
+  ]
+ }
+]
