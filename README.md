@@ -88,11 +88,41 @@ Xetra, IWDA in Amsterdam and SWDA in Milan. Statistics belong to the fund;
 tickers, venues and currencies belong to the listing. A bare ticker is never a
 key.
 
-## Sources
+## Sources and what this repository publishes
 
-Chosen for licence as much as for coverage. Endpoints whose terms forbid
-automated access are not used, however convenient — justETF is the notable
-exclusion, since its robots.txt disallows the very endpoints its screener calls.
+Chosen for licence as much as for coverage.
+
+Most of the pipeline draws on sources that invite reuse: ESMA FIRDS is public
+regulatory filing data requiring only attribution, GLEIF is CC0, and the ECB
+publishes its reference rates for exactly this purpose. The venue directories
+are published for public consultation.
+
+Two sources are not in that category, and the position taken here is deliberate
+rather than convenient. **justETF is not used at all**: its robots.txt disallows
+the endpoints its own screener calls, and its terms separately prohibit
+"programs to carry out automated price inquiries" — an explicit contractual ban,
+not merely a crawler preference. **Yahoo Finance is used, but its data is not
+redistributed.** The chart host it serves from carries a blanket robots.txt
+disallow, which is the same posture justETF takes, so treating the two
+differently on coverage grounds alone would be a double standard.
+
+The line drawn instead is between using data and republishing it:
+
+- **Computed here, published in full** — performance statistics, calendar-period
+  returns, and a weekly total-return index rebased to 100 in EUR. These are this
+  project's own reconstructions, derived from raw bars combined with our
+  dividend adjustment and ECB conversion. Facts about funds, not a copy of a
+  feed.
+- **Used here, never published** — raw daily OHLCV. No open, high, low, close or
+  volume series appear in `docs/data/`. `data/processed/prices/` is local-only
+  and git-ignored.
+
+A weekly subset of raw closes would still be raw closes; a rebased index is a
+transformation. That distinction is the whole policy, and `pipeline/export.py`
+enforces it.
+
+| Source | Contributes |
+| --- | --- |
 
 | Source | Contributes |
 | --- | --- |

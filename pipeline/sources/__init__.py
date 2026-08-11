@@ -33,10 +33,24 @@ the build -- so `fetch` raises only on programming errors, and reports upstream
 failure through `SourceResult.ok = False` with a populated `error`.
 
 Politeness is not optional either. These are public services and this pipeline
-is not entitled to hammer them: honour robots.txt, identify via config.USER_AGENT,
-cache aggressively into data/raw/, and rate-limit. Sources whose terms forbid
-automated access are not used at all, however convenient (justETF is the notable
-exclusion -- its robots.txt disallows the data endpoints its screener calls).
+is not entitled to hammer them: identify via config.USER_AGENT, cache
+aggressively into data/raw/, and rate-limit.
+
+On terms of use, the project draws its line between *using* data and
+*republishing* it, and applies that line consistently:
+
+  - A source with an explicit contractual ban on automated access is not used
+    at all. justETF is the case in point -- beyond its robots.txt, its terms
+    prohibit "programs to carry out automated price inquiries" -- so no adapter
+    for it exists, however convenient its coverage would be.
+  - A source whose robots.txt disallows crawling, but which imposes no such
+    contractual ban, may be read to compute with; its data is never
+    redistributed. Yahoo is the case in point, and pipeline/export.py enforces
+    the boundary: derived statistics and our own rebased total-return index are
+    published, raw OHLCV never is.
+
+The tempting inconsistency would be to exclude one and quietly use the other
+because the second is harder to replace. See the README for the full policy.
 """
 
 from __future__ import annotations
