@@ -50,6 +50,10 @@ What is deliberately left null
 * **issuer** -- FIRDS gives the sub-fund's own LEI, not a name, and the schema
   has no LEI column. The map is written next to the cache as
   `issuer_lei.json` for the GLEIF stage, which resolves LEI to manager name.
+* **three of the seven CFI asset classes** -- the register is authoritative about
+  *identity*, not about what a fund holds, because the CFI is self-reported. Only
+  the classes that agree with the funds' own names are mapped; see
+  `CFI_ASSET_CLASS` for the measurement and the three that were dropped.
 """
 
 from __future__ import annotations
@@ -130,14 +134,43 @@ NON_COUNTRY_ISIN_PREFIXES = frozenset({"XS", "EU", "QS", "QT", "QZ", "XA", "XF"}
 # report "M -- other" for a plain equity tracker, which is exactly why anything
 # not in these maps becomes "unknown" instead of a guess.
 CFI_DISTRIBUTION = {"I": "distributing", "G": "accumulating"}  # J = mixed
+
+# Only the classes that survive contact with the data. Measured over the 7,837
+# ETF ISINs in FULINS_C of 2026-08-08, scoring each class against the funds whose
+# own name states an asset in words nobody disputes ("... Bond ...", "MSCI ...",
+# "... Gold ..."), the classes split cleanly in two:
+#
+#     CFI 5   claims         named   agrees        verdict
+#     E       equity          1318    96.1%        kept
+#     B       bond             628    96.7%        kept
+#     C       commodity         63    81.0%        kept (the misses are 4 crypto
+#                                                   ETPs and 2 mining equities)
+#     R       real-estate       19    78.9%        kept (24 of the 33 are REIT or
+#                                                   property funds by name)
+#     L       "mixed"          728     1.9%        DEMOTED -- 66% of them are
+#                                                   plainly equity, incl. iShares
+#                                                   Core S&P 500 and Invesco
+#                                                   Nasdaq 100
+#     V       convertibles      12    50.0%        DEMOTED -- exactly 9 of the 18
+#                                                   are convertible or CoCo bond
+#                                                   funds, the other 9 are
+#                                                   Vanguard FTSE equity trackers
+#     F       currency           5     0.0%        DEMOTED -- all 11 are equity
+#                                                   index funds (Invesco MDAX,
+#                                                   MSCI Kuwait, MSCI Japan...)
+#
+# ISO 10962 does define L as "Mixed", so mapping it to multi-asset was faithful
+# to the standard and false about the funds -- the worst combination, because it
+# put a specific wrong answer behind a regulator's authority and made the
+# screener's "equity" filter hide the most popular equity ETF in the world. The
+# three demoted classes fall through to "unknown", which asserts nothing, and
+# `pipeline/classify.py` reads the fund's name at the bottom of the trust ladder.
+# `multi-asset` is a real thing and stays reachable -- from a source that knows.
 CFI_ASSET_CLASS = {
     "E": "equity",
     "B": "bond",
-    "V": "bond",  # convertibles: a debt instrument with an equity option
     "C": "commodity",
     "R": "real-estate",
-    "F": "currency",
-    "L": "multi-asset",
 }
 
 # The fields `iter_records` pulls out of one <RefData> element, in order.

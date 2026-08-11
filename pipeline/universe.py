@@ -60,6 +60,29 @@ where it is the only source there is nothing to displace it, so a value above
 `MAX_PLAUSIBLE_AUM_EUR` from an aggregator is nulled and counted. The bound is
 deliberately loose: it is there to catch an order-of-magnitude error, not to
 second-guess a large fund.
+
+Two passes after the fold
+-------------------------
+Both run once the trust rule has finished, because both are statements about the
+*published* universe rather than about how sources are reconciled.
+
+**The tradability test** (`require_ticker`, which `run` turns on). A fund with no
+ticker on any of its listings cannot be bought on an exchange, so it is not an
+exchange-traded fund, and this is a database of those. 1,070 of 12,366 rows fail
+it -- 459 of them Danish `investeringsforeninger`, ordinary open-ended mutual
+funds that FIRDS files under the same CFI collective-investment class as ETFs, so
+no CFI filter can separate the two. The test is deliberately not a name test: a
+name test would kill 21Shares' crypto ETPs and `SPROTT PHYSICAL GOLD TRUST`,
+which are exchange-traded and say so nowhere in their names. Exactly zero of the
+1,070 have a single price bar in the database -- no ticker means no symbol means
+no series -- so what is dropped is rows carrying a name and nothing else. It is a
+*publication* policy, not part of the fold, which is why `merge` does not apply
+it unless asked: a merge is still a merge without a listing table.
+
+**The name heuristic** (`pipeline/classify.py`). Runs last and at the bottom of
+the trust ladder, writing only into `asset_class` and `strategy` cells that are
+null or "unknown", never over a value a source supplied. See that module for why
+reading names is defensible at all and what it refuses to guess.
 """
 
 from __future__ import annotations
@@ -79,6 +102,7 @@ from typing import Any, Iterable, Mapping, Sequence
 import pandas as pd
 import pyarrow as pa
 
+from . import classify
 from . import isin as isin_module
 from . import schema
 from .config import BENCHMARK_ISIN, RAW
@@ -505,6 +529,14 @@ class MergeReport:
     aum_nulled: int = 0
     aum_examples: tuple[tuple[str, float], ...] = ()
     contested_fields: dict[str, int] = field(default_factory=dict)
+    # Rows that failed the tradability test, and the fields the name heuristic
+    # had to fill because no source would. Both are reported for the same reason
+    # the ISIN rejects are: a build that silently deletes 1,070 funds or invents
+    # 4,000 asset classes must say so where a reviewer will see it.
+    untradable_funds: int = 0
+    untradable_listings: int = 0
+    untradable_examples: tuple[tuple[str, str], ...] = ()
+    inferred_fields: dict[str, int] = field(default_factory=dict)
 
     @property
     def failed_sources(self) -> list[SourceStatus]:
@@ -526,6 +558,10 @@ class MergeReport:
             "orphan_listings": self.orphan_listings,
             "aum_nulled": self.aum_nulled,
             "contested_fields": self.contested_fields,
+            "untradable_funds": self.untradable_funds,
+            "untradable_listings": self.untradable_listings,
+            "untradable_examples": [list(pair) for pair in self.untradable_examples],
+            "inferred_fields": self.inferred_fields,
             "sources": [
                 {
                     "name": s.name,
@@ -761,11 +797,112 @@ def _apply_aum_bound(
     return frame
 
 
+def _drop_untradable(
+    funds: pd.DataFrame,
+    listings: pd.DataFrame,
+    provenance: pd.DataFrame,
+    report: MergeReport,
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """Keep only funds carrying a ticker on at least one venue. See the docstring.
+
+    Skipped rather than applied when there is no listing table at all: that says
+    the venue sources are missing, not that the funds are untradable, and
+    deleting the whole universe over it would be the opposite of fail-soft.
+    """
+    if funds.empty:
+        return funds, listings, provenance
+    if listings is None or listings.empty or "ticker" not in listings.columns:
+        log.warning(
+            "no listing table: the tradability test is skipped and %d fund(s) "
+            "are published untested",
+            len(funds),
+        )
+        return funds, listings, provenance
+
+    tradable = set(listings.loc[listings["ticker"].notna(), "isin"])
+    keep = funds["isin"].isin(tradable)
+    if keep.all():
+        return funds, listings, provenance
+
+    dropped = funds.loc[~keep]
+    report.untradable_funds = int(len(dropped))
+    report.untradable_examples = tuple(
+        (str(key), str(name)) for key, name in zip(dropped["isin"], dropped["name"])
+    )[:5]
+
+    kept_keys = set(funds.loc[keep, "isin"])
+    surviving = listings["isin"].isin(kept_keys)
+    report.untradable_listings = int((~surviving).sum())
+    log.warning(
+        "%d fund(s) carry no ticker on any of their %d listing(s) and are not "
+        "exchange-traded; dropped, e.g. %s",
+        report.untradable_funds,
+        report.untradable_listings,
+        report.untradable_examples[:3],
+    )
+
+    return (
+        funds.loc[keep].reset_index(drop=True),
+        listings.loc[surviving].reset_index(drop=True),
+        provenance[provenance["isin"].isin(kept_keys)].reset_index(drop=True)
+        if len(provenance)
+        else provenance,
+    )
+
+
+def _infer_missing(
+    funds: pd.DataFrame, provenance: pd.DataFrame, report: MergeReport
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Run the name heuristic over the cells no source filled, and sign its work.
+
+    The provenance row is rewritten rather than appended so that
+    `MergeResult.source_of` keeps answering with the source of the *published*
+    value. `contenders` is left alone: it still counts the sources that had an
+    opinion, all of which said "unknown", which is the interesting part.
+    """
+    frame, filled = classify.apply(funds)
+    report.inferred_fields = {
+        name: len(keys) for name, keys in filled.items() if keys
+    }
+    pairs = sorted(
+        (key, name) for name, keys in filled.items() for key in keys
+    )
+    if not pairs:
+        return frame, provenance
+
+    target = pd.MultiIndex.from_tuples(pairs, names=["isin", "field"])
+    if len(provenance):
+        existing = pd.MultiIndex.from_frame(provenance[["isin", "field"]])
+        known = existing.isin(target)
+        provenance.loc[known, "source"] = classify.NAME
+        provenance.loc[known, "trust"] = classify.TRUST
+        target = target.difference(existing)
+
+    if len(target):
+        provenance = pd.concat(
+            [
+                provenance,
+                pd.DataFrame(
+                    {
+                        "isin": target.get_level_values("isin"),
+                        "field": target.get_level_values("field"),
+                        "source": classify.NAME,
+                        "trust": classify.TRUST,
+                        "contenders": 0,  # nobody contested it; nobody answered
+                    }
+                ),
+            ],
+            ignore_index=True,
+        )
+    return frame, provenance
+
+
 def merge(
     results: Sequence[SourceResult],
     *,
     registry: MicRegistry | None = None,
     trust: Mapping[str, int] | None = None,
+    require_ticker: bool = False,
 ) -> MergeResult:
     """Fold every source into one funds table and one listings table.
 
@@ -776,6 +913,12 @@ def merge(
 
     Failed sources are folded in like any other -- they carry empty frames -- so
     the result degrades by exactly what they would have contributed.
+
+    `require_ticker` applies the tradability test described in the module
+    docstring. It is off by default because it is a publication policy rather
+    than part of the fold, and `merge` must stay callable -- in tests, and on a
+    subset of sources -- without a listing table to test against. `run` turns it
+    on for the universe it publishes.
     """
     trust = dict(trust_levels() if trust is None else trust)
     unknown = sorted({r.name for r in results} - set(trust))
@@ -804,6 +947,9 @@ def merge(
         listings_stack, funds, registry or MicRegistry.from_csv(_EMPTY_REGISTER), report
     )
     funds = _apply_aum_bound(funds, provenance, report)
+    if require_ticker:
+        funds, listings, provenance = _drop_untradable(funds, listings, provenance, report)
+    funds, provenance = _infer_missing(funds, provenance, report)
 
     for name, status in statuses.items():
         status.fields_won = int((provenance["source"] == name).sum()) if len(provenance) else 0
@@ -1153,7 +1299,10 @@ def run(
                     listings=context.listings,
                 )
 
-    return merge(results, registry=registry)
+    # The interim merge above is deliberately unfiltered: it exists to hand the
+    # enrichment wave a listing table, and a fund with no ticker yet is exactly
+    # the kind an enrichment source might still name.
+    return merge(results, registry=registry, require_ticker=True)
 
 
 def _surrogate_mics() -> set[str]:

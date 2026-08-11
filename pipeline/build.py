@@ -184,6 +184,8 @@ class BuildReport:
     orphan_listings: int = 0
     surrogate_keys: int = 0
     aum_nulled: int = 0
+    untradable_funds: int = 0
+    untradable_listings: int = 0
     funds_total: int = 0
     funds_with_symbol: int = 0
     listings_with_symbol: int = 0
@@ -260,6 +262,8 @@ class BuildReport:
         add(f"  listings with no fund, dropped          {self.orphan_listings:>10,}")
         add(f"  surrogate keys (no ISIN exists)         {self.surrogate_keys:>10,}")
         add(f"  AUM values nulled (sanity bound)        {self.aum_nulled:>10,}")
+        add(f"  untradable, dropped (no ticker anywhere){self.untradable_funds:>10,}")
+        add(f"    their listings                       {self.untradable_listings:>10,}")
 
         add("")
         add("coverage")
@@ -313,6 +317,8 @@ class BuildReport:
             "orphan_listings": self.orphan_listings,
             "surrogate_keys": self.surrogate_keys,
             "aum_nulled": self.aum_nulled,
+            "untradable_funds": self.untradable_funds,
+            "untradable_listings": self.untradable_listings,
             "funds_total": self.funds_total,
             "funds_without_prices": self.funds_without_prices,
             "pea": self.pea,
@@ -377,6 +383,11 @@ def stage_universe(
     report.orphan_listings = merge_report.orphan_listings
     report.surrogate_keys = merge_report.surrogate_keys
     report.aum_nulled = merge_report.aum_nulled
+    # Surfaced in the summary rather than left in merge_report.json: 1,070 rows
+    # leaving the universe is exactly the kind of thing that should be visible
+    # in the log rather than discovered later as a gap in the totals.
+    report.untradable_funds = merge_report.untradable_funds
+    report.untradable_listings = merge_report.untradable_listings
 
     funds, listings = universe.sample(merge_result.funds, merge_result.listings, cfg.limit)
     state.funds, state.listings = funds, listings

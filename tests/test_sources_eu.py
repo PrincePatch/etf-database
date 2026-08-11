@@ -26,7 +26,7 @@ import pandas as pd
 import pyarrow as pa
 import pytest
 
-from pipeline import schema
+from pipeline import classify, schema
 from pipeline.sources import _http, euronext, firds, lse, six, xetra
 
 FIXTURES = Path(__file__).parent / "fixtures"
@@ -194,6 +194,63 @@ def test_firds_maps_the_cfi_onto_the_vocabularies(firds_result) -> None:
     # CEXXXX: the issuer declared nothing, and nothing is what we publish.
     assert by_isin.loc["DE000ETFL011", "distribution_policy"] == "unknown"
     assert by_isin.loc["DE000ETFL011", "asset_class"] == "unknown"
+
+
+# CFI character 5, and what the register's own funds say about it. See the
+# measurement in `firds.CFI_ASSET_CLASS`: three of the seven classes disagree
+# with the funds' names badly enough that mapping them asserts a specific false
+# thing with a regulator's authority behind it.
+DEMOTED_CFI_ASSET_CLASSES = {
+    "L": "multi-asset",  # 1.9% agreement: two thirds are plainly equity
+    "V": "bond",  # 50%: 9 convertible funds, 9 Vanguard equity trackers
+    "F": "currency",  # 0%: all 11 are equity index funds
+}
+
+
+@pytest.mark.parametrize("character", sorted(DEMOTED_CFI_ASSET_CLASSES))
+def test_a_self_reported_cfi_class_that_disagrees_with_the_funds_is_not_asserted(
+    character: str,
+) -> None:
+    """The headline defect: `CEOGLS` on iShares Core S&P 500 is not multi-asset.
+
+    Issuers self-report the CFI and file plain equity trackers under "mixed", so
+    the honest answer is "unknown" -- which carries no claim and lets the name
+    heuristic, at the bottom of the trust ladder, say what the fund actually is.
+    """
+    assert character not in firds.CFI_ASSET_CLASS
+
+    record = {
+        "isin": "IE00B5BMR087",
+        "name": "iShares Core S&P 500 UCITS ETF",
+        "short_name": "ISHR/SP500",
+        "cfi": f"CEOG{character}S",
+        "currency": "USD",
+        "issuer_lei": None,
+        "mic": "XMSM",
+        "first_trade_date": None,
+        "termination_date": None,
+    }
+    markets = pd.DataFrame(
+        [{"mic": "XMSM", "venue_name": "EURONEXT DUBLIN", "venue_country": "IE"}]
+    )
+    funds, _listings, _stats = firds.build(iter([record]), markets)
+    assert funds.loc[0, "asset_class"] == "unknown"
+
+
+def test_the_cfi_classes_that_do_agree_are_left_exactly_as_they_were() -> None:
+    """Demoting a mapping that works would trade right answers for nulls."""
+    assert firds.CFI_ASSET_CLASS == {
+        "E": "equity",  # 96.1% agreement over 1,318 named funds
+        "B": "bond",  # 96.7% over 628
+        "C": "commodity",  # 81.0% over 63
+        "R": "real-estate",  # 78.9% over 19
+    }
+
+
+def test_multi_asset_is_still_reachable_from_a_source_that_knows() -> None:
+    """Mixed-allocation funds exist; what was wrong was who was asserting it."""
+    assert "multi-asset" in schema.ASSET_CLASS
+    assert classify.classify("Vanguard LifeStrategy 60% Equity UCITS ETF")[0] == "multi-asset"
 
 
 def test_xetra_maps_its_shelf_labels_onto_the_vocabularies(xetra_result) -> None:

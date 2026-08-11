@@ -35,7 +35,7 @@ from types import SimpleNamespace
 import pandas as pd
 import pytest
 
-from pipeline import schema, universe
+from pipeline import classify, schema, universe
 from pipeline.sources import REGISTRY, SourceResult, euronext, firds, lse, openfigi, six
 from pipeline.sources import us, xetra, yahoo_meta
 from pipeline.sources._http import to_frame
@@ -627,6 +627,160 @@ def test_the_bound_does_not_touch_a_venue_published_figure(registry):
 def test_a_nonpositive_aggregator_aum_is_nulled(registry):
     result = merged([source("yahoo", [{"isin": WORLD, "aum_eur": 0.0}])], registry)
     assert pd.isna(value(result.funds, WORLD, "aum_eur"))
+
+
+# --------------------------------------------------------------------------- #
+# Hazard 3: a fund nobody can buy
+#
+# 1,070 of 12,366 rows carry no ticker on any venue -- 459 of them Danish
+# open-ended mutual funds that FIRDS files under the same CFI class as ETFs. None
+# of them has a single price bar, because no ticker means no symbol means no
+# series. See the module docstring for why the test is tradability and not a name.
+# --------------------------------------------------------------------------- #
+
+
+def test_a_fund_with_no_ticker_on_any_venue_is_not_published(registry):
+    result = merged(
+        [
+            source(
+                "firds",
+                [{"isin": WORLD, "name": "iShares Core MSCI World"},
+                 {"isin": AMUNDI, "name": "Sparinvest Mix Aktier KL A"}],
+                [{"isin": WORLD, "exchange_mic": "XETA", "trading_currency": "EUR"},
+                 {"isin": AMUNDI, "exchange_mic": "XCSE", "trading_currency": "DKK"}],
+            ),
+            source(
+                "xetra",
+                listings=[{"isin": WORLD, "exchange_mic": "XETR", "ticker": "EUNL"}],
+            ),
+        ],
+        registry,
+        require_ticker=True,
+    )
+    assert set(result.funds["isin"]) == {WORLD}
+    assert set(result.listings["isin"]) == {WORLD}
+    assert result.report.untradable_funds == 1
+    assert result.report.untradable_listings == 1
+    assert result.report.untradable_examples[0][0] == AMUNDI
+    # ...and its provenance goes with it: no row, no audit trail to answer for.
+    assert AMUNDI not in set(result.provenance["isin"])
+
+
+def test_one_ticker_on_one_venue_is_enough(registry):
+    """The test is "can it be bought anywhere", not "is every listing complete"."""
+    result = merged(
+        [
+            source(
+                "firds",
+                [{"isin": WORLD, "name": "iShares Core MSCI World"}],
+                [{"isin": WORLD, "exchange_mic": "XETA"},
+                 {"isin": WORLD, "exchange_mic": "XPAR", "ticker": "CW8"}],
+            )
+        ],
+        registry,
+        require_ticker=True,
+    )
+    assert set(result.funds["isin"]) == {WORLD}
+    assert result.report.untradable_funds == 0
+    # Both listings survive: the fund is tradable, and the venue that reported no
+    # ticker is a gap in that source, not evidence about the fund.
+    assert len(result.listings) == 2
+
+
+def test_the_tradability_test_is_off_unless_the_caller_asks(registry):
+    """A merge is still a merge without a listing table to test against."""
+    result = merged([source("firds", [{"isin": WORLD, "name": "no listings here"}])], registry)
+    assert set(result.funds["isin"]) == {WORLD}
+    assert result.report.untradable_funds == 0
+
+
+def test_no_listing_table_at_all_skips_the_test_rather_than_emptying_the_universe(
+    registry, caplog
+):
+    """That says the venue sources are missing, not that the funds are untradable."""
+    result = merged(
+        [source("yahoo", [{"isin": WORLD, "name": "still here", "ter": 0.002}])],
+        registry,
+        require_ticker=True,
+    )
+    assert set(result.funds["isin"]) == {WORLD}
+    assert result.report.untradable_funds == 0
+
+
+def test_run_publishes_only_what_can_be_bought(registry):
+    """`run` is where the publication policy is applied; `merge` alone is not."""
+
+    def fetch(refresh: bool = False):
+        return source(
+            "firds",
+            [{"isin": WORLD, "name": "tradable"}, {"isin": SP500, "name": "not tradable"}],
+            [{"isin": WORLD, "exchange_mic": "XPAR", "ticker": "CW8"},
+             {"isin": SP500, "exchange_mic": "XCSE"}],
+        )
+
+    adapter = universe.Adapter("firds", 100, SimpleNamespace(fetch=fetch))
+    result = universe.run(adapters=[adapter], registry=registry)
+    assert set(result.funds["isin"]) == {WORLD}
+    assert result.report.untradable_funds == 1
+
+
+# --------------------------------------------------------------------------- #
+# Hazard 4: the name heuristic, which runs last and must lose every argument
+# --------------------------------------------------------------------------- #
+
+
+def test_the_heuristic_fills_only_what_no_source_would(registry):
+    result = merged(
+        [source("firds", [{"isin": SP500, "name": "iShares Core S&P 500 UCITS ETF",
+                           "asset_class": "unknown"}])],
+        registry,
+    )
+    assert value(result.funds, SP500, "asset_class") == "equity"
+    assert result.source_of(SP500, "asset_class") == classify.NAME
+    assert result.report.inferred_fields["asset_class"] == 1
+    # The trail still records that a real source was asked and had nothing.
+    trail = result.provenance
+    row = trail[(trail["isin"] == SP500) & (trail["field"] == "asset_class")]
+    assert int(row.iloc[0]["contenders"]) == 1
+    assert int(row.iloc[0]["trust"]) == classify.TRUST
+
+
+def test_a_source_answer_survives_the_heuristic_whatever_the_name_says(registry):
+    """A name heuristic losing to a filing is the point of the trust ordering."""
+    result = merged(
+        [source("firds", [{"isin": SP500, "name": "iShares Core S&P 500 UCITS ETF",
+                           "asset_class": "bond"}])],
+        registry,
+    )
+    assert value(result.funds, SP500, "asset_class") == "bond"
+    assert result.source_of(SP500, "asset_class") == "firds"
+    assert result.report.inferred_fields == {}
+
+
+def test_a_name_the_heuristic_cannot_read_stays_null(registry):
+    result = merged([source("firds", [{"isin": WORLD, "name": "ETFBW20ST"}])], registry)
+    assert pd.isna(value(result.funds, WORLD, "asset_class"))
+    assert list(value(result.funds, WORLD, "data_sources")) == ["firds"]
+
+
+def test_an_inferred_row_says_so_in_data_sources(registry):
+    result = merged(
+        [source("firds", [{"isin": SP500, "name": "iShares Core S&P 500 UCITS ETF"}])],
+        registry,
+    )
+    assert list(value(result.funds, SP500, "data_sources")) == ["firds", classify.NAME]
+
+
+def test_the_heuristic_runs_after_the_fold_not_inside_it(registry):
+    """A TRUST 80 source must still beat FIRDS's null, not the heuristic's guess."""
+    result = merged(
+        [
+            source("firds", [{"isin": SP500, "name": "iShares Core S&P 500 UCITS ETF"}]),
+            source("xetra", [{"isin": SP500, "asset_class": "commodity"}]),
+        ],
+        registry,
+    )
+    assert value(result.funds, SP500, "asset_class") == "commodity"
 
 
 # --------------------------------------------------------------------------- #
